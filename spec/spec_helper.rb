@@ -6,3 +6,8 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
 require 'factory_girl_rails'
+
+VCR.configure do |c|
+  c.cassette_library_dir = Rails.root.join "spec", "vcr_cassettes"
+  c.hook_into :fakeweb
+end
