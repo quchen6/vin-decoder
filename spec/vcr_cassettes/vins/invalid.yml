@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.edmunds.com/v1/api/toolsrepository/vindecoder?api_key=vk8s2ze9y5tej7bwjp8c2v6g&fmt=json&vin=invalid_vin
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: !binary |-
+        QmFkIFJlcXVlc3Q=
+    headers:
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbg==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAwMSBPY3QgMjAxMyAwMTo0NDowNSBHTVQ=
+      !binary "UDNw":
+      - !binary |-
+        cG9saWN5cmVmPSJodHRwOi8vd3d3LmVkbXVuZHMuY29tL3czYy9wM3AueG1s
+        IixDUD0iSURDIERTUCBDT1IgQ1VSYSBBRE1hIERFVmEgVEFJYSBPVVIgQlVT
+        IElORCBVTkkgQ09NIE5BViBJTlQi
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hlLUNveW90ZS8xLjE=
+      !binary "WC1DbmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "WC1FbnZpcm9ubWVudA==":
+      - !binary |-
+        UHJvZC0z
+      !binary "WC1NYXNoZXJ5LVJlc3BvbmRlcg==":
+      - !binary |-
+        cHJvZC1qLXdvcmtlci11cy1lYXN0LTFkLTM1Lm1hc2hlcnkuY29t
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MTE0
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKtWSi0qyi9SsqqGMEIqC1KVrJQ8/Zz9g4JcnUPiAxyDHH2D
+        lXSUclOLixPTQZIhGakKYZ5+CpnFCpl5yflFRanJJXoKniUKuaXFJQpJqQqG
+        5grJGYlFicklqUXFSrW1AAWI8oFlAAAA
+    http_version: 
+  recorded_at: Tue, 01 Oct 2013 01:44:05 GMT
+recorded_with: VCR 2.6.0
