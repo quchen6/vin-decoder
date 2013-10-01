@@ -1,2 +1,45 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-12 col-white">
+    <h2>VIN Search</h2>
+
+
+    <p>
+      <div ng-controller="RaffleCtrl">
+        <form ng-submit="addEntry()">
+
+          <div class="form-group">
+            <input type="text" class="form-control" id="vehicle_search" placeholder="Enter VIN" ng-model="newVehicle.name">
+          </div>
+
+          <input type="submit" class="btn btn-primary" values="Search"/>
+        </form>
+
+        <ul>
+          <li ng-repeat="vehicle in vehicles">
+            {{vehicle.year}} {{vehicle.make}} {{vehicle.model}}
+          </li>
+        </ul>
+        
+      </div>
+    </p>
+
+  </div><!--/span-->
+</div><!--/row-->
+
+<br/>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-10 col-white">
+    <h2>Heading</h2>
+    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+  </div><!--/span-->
+
+  <div class="col-xs-12 col-sm-6 col-md-2 col-white">
+    <h2>Heading</h2>
+    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+  </div><!--/span-->
+
+
+</div><!--/row-->
