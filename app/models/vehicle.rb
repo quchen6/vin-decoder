@@ -1,5 +1,8 @@
 class Vehicle < ActiveRecord::Base
 
+	# validates 		:year, :model, :make, presence: true
+	validate 			:validate_vin
+
 	def self.new_from_vin vin
 		vehicle 											= Vehicle.new
 
@@ -17,5 +20,20 @@ class Vehicle < ActiveRecord::Base
 		end
 
 		vehicle
+	end
+
+	def full_name
+		[year, make, model].join(" ")
+	end
+
+	protected
+
+	def validate_vin
+		if self.vin.blank?
+			self.errors.add :vin, :invalid
+			false
+		else
+			true
+		end
 	end
 end

@@ -1,44 +1,49 @@
 <div class="row">
-  <div class="col-xs-12 col-sm-6 col-md-12 col-white">
-    <h2>VIN Search</h2>
 
-
-    <p>
-      <div ng-controller="RaffleCtrl">
-        <form ng-submit="addEntry()">
-
-          <div class="form-group">
-            <input type="text" class="form-control" id="vehicle_search" placeholder="Enter VIN" ng-model="newVehicle.name">
-          </div>
-
-          <input type="submit" class="btn btn-primary" values="Search"/>
-        </form>
-
-        <ul>
-          <li ng-repeat="vehicle in vehicles">
-            {{vehicle.year}} {{vehicle.make}} {{vehicle.model}}
-          </li>
-        </ul>
-        
-      </div>
-    </p>
-
-  </div><!--/span-->
 </div><!--/row-->
 
 <br/>
 
-<div class="row">
-  <div class="col-xs-12 col-sm-6 col-md-10 col-white">
-    <h2>Heading</h2>
-    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-    <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-  </div><!--/span-->
+<div class="row" ng-controller="VehicleCtrl">
 
-  <div class="col-xs-12 col-sm-6 col-md-2 col-white">
-    <h2>Heading</h2>
-    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-    <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+  <div class="col-xs-12 col-sm-6 col-md-8">
+
+    <div class="col-xs-12 col-sm-6 col-md-12 col-white">
+      <h2>VIN Search</h2>
+      <p>
+        <div>
+          <form ng-submit="searchByVin()">
+            <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %> 
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="vehicle_search" placeholder="Enter VIN" ng-model="newVehicle.vin">
+            </div>
+
+            <input type="submit" class="btn btn-primary" values="Search"/>
+          </form>
+        </div>
+      </p>
+
+    </div><!--/span-->
+
+    <br /><br />
+    &nbsp;
+
+    <div class="col-xs-12 col-sm-6 col-md-12 col-white">
+      <h2>{{lastVehicle.vin}}</h2>
+      <p>
+      <!--   Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. -->
+      </p>
+    </div><!--/span-->
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-4 col-white">
+    <h2>Recent Searches</h2>
+    <ul>
+      <li ng-repeat="vehicle in vehicles">
+        {{vehicle.full_name}}
+      </li>
+    </ul>
   </div><!--/span-->
 
 
