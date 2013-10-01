@@ -56,3 +56,5 @@ end
 
 gem "rest-client"
 gem 'angularjs-rails'
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+                              :github => 'anjlab/bootstrap-rails'
