@@ -55,3 +55,4 @@ group :test do
 end
 
 gem "rest-client"
+gem 'angularjs-rails'

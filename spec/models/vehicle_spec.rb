@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Vehicle do
   let(:vin)			{ "1N4AL3AP4DC295509" }
-  let(:bad_vin)	{ "invalid_vin"}
+  let(:bad_vin)	{ "invalid_vin" }
   let(:vehicle)	{ 
 		VCR.use_cassette "vins/nissan_altima" do
 			Vehicle.new_from_vin vin
