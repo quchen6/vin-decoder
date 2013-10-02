@@ -26,6 +26,10 @@ class Vehicle < ActiveRecord::Base
 		[year, make, model].join(" ")
 	end
 
+	def full_error_messages
+		self.errors.full_messages
+	end
+
 	protected
 
 	def validate_vin

@@ -6,16 +6,25 @@ app.factory "Vehicle", ["$resource", ($resource) ->
 
 @VehicleCtrl = ["$scope", "Vehicle", ($scope, Vehicle) ->
   $scope.vehicles 				= Vehicle.query( ->
-    $scope.setLastVehicle()
+    # $scope.expandVehicle($scope.vehicles.last)
+    # console.log($scope.vehicles.last)
   )
+  $scope.vinErrors 				= []
 
   $scope.searchByVin = ->
-    vehicle 							= Vehicle.save($scope.newVehicle, ->
+    $scope.vinErrors 			= []
+    vehicle 							= Vehicle.save($scope.newVehicle, (->
     	$scope.lastVehicle	= vehicle
     	$scope.newVehicle 	= {}
     	$scope.vehicles.push(vehicle)
+    	console.log(vehicle)), 
+    (data) ->
+    	$scope.vinErrors 		= data.data.full_error_messages
    	)
 
   $scope.setLastVehicle = ->
   	$scope.lastVehicle 		= $scope.vehicles.last
+
+  $scope.expandVehicle = (vehicle) ->
+  	$scope.lastVehicle 		= Vehicle.get({id: vehicle.id})
 ]

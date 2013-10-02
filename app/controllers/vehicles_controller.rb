@@ -18,6 +18,10 @@ class VehiclesController < ApplicationController
   # GET /vehicles/1
   # GET /vehicles/1.json
   def show
+    respond_to do |format|
+      format.html
+      format.json { render json: @vehicle.to_json( methods: [:full_name] ) }
+    end
   end
 
   # GET /vehicles/new
@@ -41,7 +45,7 @@ class VehiclesController < ApplicationController
         format.json { render json: @vehicle.to_json( methods: [:full_name] ) }
       else
         format.html { render action: 'new' }
-        format.json { render json: @vehicle.errors, status: :unprocessable_entity }
+        format.json { render json: @vehicle.to_json( methods: [:full_error_messages] ), status: :unprocessable_entity }
       end
     end
   end

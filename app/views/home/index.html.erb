@@ -19,9 +19,13 @@
               <input type="text" class="form-control" id="vehicle_search" placeholder="Enter VIN" ng-model="newVehicle.vin">
             </div>
 
+            <div ng-repeat="error_message in vinErrors">
+              <div class="alert alert-danger">{{error_message}}</div>
+            </div>
+
             <input type="submit" class="btn btn-primary" values="Search"/>
           </form>
-      </div>
+        </div>
       </p>
 
     </div><!--/span-->
@@ -30,18 +34,27 @@
     &nbsp;
 
     <div class="col-xs-12 col-sm-6 col-md-12 col-white">
-      <h2>{{lastVehicle.vin}}</h2>
-      <p>
-      <!--   Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. -->
-      </p>
+      <h2>{{lastVehicle.full_name}}</h2>
+      <table>
+        <tr>
+          <td><%= Vehicle.human_attribute_name(:transmission_type) %></td>
+          <td>{{lastVehicle.transmission_type}}</td>
+        </tr>
+
+        <tr>
+          <td><%= Vehicle.human_attribute_name(:engine_type) %></td>
+          <td>{{lastVehicle.engine_type}}</td>
+        </tr>
+      </table>
+      <p></p>
     </div><!--/span-->
   </div>
 
   <div class="col-xs-12 col-sm-6 col-md-4 col-white">
     <h2>Recent Searches</h2>
-    <ul>
-      <li ng-repeat="vehicle in vehicles">
-        {{vehicle.full_name}}
+    <ul class="table">
+      <li ng-repeat="vehicle in vehicles | orderBy:'id':true">
+        <a href ng-click="expandVehicle(vehicle)">{{vehicle.full_name}}</a>
       </li>
     </ul>
   </div><!--/span-->
