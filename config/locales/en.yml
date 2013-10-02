@@ -27,8 +27,11 @@ en:
         vehicle:
           attributes:
             vin:
-              invalid: "The VIN you entered does not appear to be correct. Please try again."
+              invalid: "does not appear to be correct. Please try again."
     models:
       vehicle:
         one: Vehicle
         other: Vehicles
+    attributes:
+      vehicle:
+        vin: "VIN"
