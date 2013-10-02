@@ -22,6 +22,15 @@ h3{
 	margin-top: -10px;
 }
 
+span.section-header{
+	color: #485667;
+	margin-bottom: 20px;
+	font-size: 28px;
+	font-weight: 200;
+	font-family: Scala, serif;
+	line-height: 30px;
+}
+
 div.col-white{
 	background: 				#fff;
 	border: 						1px solid #d8d7d9;

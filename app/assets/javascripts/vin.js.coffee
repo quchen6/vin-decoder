@@ -66,7 +66,8 @@ app.filter "range", ->
 
   $scope.pageInfo = ->
   	return "Showing entries " + ($scope.offset + 1) + " - " + 
-  		(Math.min($scope.offset + $scope.perPage, $scope.totalEntries)) + " of " + ($scope.totalEntries) + " total"
+  		(Math.min($scope.offset + $scope.perPage, $scope.totalEntries)) + 
+  		" of " + ($scope.totalEntries) + " total"
 
   $scope.loadVehicles()
 ]
