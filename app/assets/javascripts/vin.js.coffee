@@ -22,7 +22,10 @@ app.filter "range", ->
   	Vehicle.query({page: $scope.currentPage}, (data) ->
   		console.log(data)
   		$scope.vehicles 		= data.vehicles
-  		$scope.total_pages	= data.total_pages
+  		$scope.totalPages		= data.total_pages
+  		$scope.offset				= data.offset
+  		$scope.perPage			= data.per_page
+  		$scope.totalEntries	= data.total_entries
 	  )
   $scope.searchByVin = ->
     $scope.vinErrors 			= []
@@ -42,7 +45,8 @@ app.filter "range", ->
   	$scope.lastVehicle 		= Vehicle.get({id: vehicle.id})
 
   $scope.deleteVehicle = (vehicle) ->
-  	vehicle.$delete( -> 
+  	console.log(vehicle)
+  	Vehicle.delete( {id: vehicle.id}, -> 
   		$scope.loadVehicles()
   	)
 
@@ -51,12 +55,18 @@ app.filter "range", ->
   	$scope.loadVehicles()
 
   $scope.nextPage = ->
-  	$scope.currentPage += 1
-  	$scope.loadVehicles()
+  	if $scope.currentPage < $scope.totalPages
+	  	$scope.currentPage += 1
+	  	$scope.loadVehicles()
 
   $scope.previousPage = ->
-  	$scope.currentPage -= 1
-  	$scope.loadVehicles()
+  	if $scope.currentPage > 1
+  		$scope.currentPage -= 1
+  		$scope.loadVehicles()
+
+  $scope.pageInfo = ->
+  	return "Showing entries " + ($scope.offset + 1) + " - " + 
+  		(Math.min($scope.offset + $scope.perPage, $scope.totalEntries)) + " of " + ($scope.totalEntries) + " total"
 
   $scope.loadVehicles()
 ]

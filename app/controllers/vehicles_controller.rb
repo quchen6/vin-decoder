@@ -11,7 +11,9 @@ class VehiclesController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json{ render json: {vehicles: @vehicles.as_json(methods: [:full_name]), total_pages: @vehicles.total_pages} }
+      format.json{ render json: {vehicles: @vehicles.as_json(methods: [:full_name]), 
+        total_pages: @vehicles.total_pages, total_entries: @vehicles.total_entries, 
+        offset: @vehicles.offset, per_page: @vehicles.per_page} }
     end
   end
 
