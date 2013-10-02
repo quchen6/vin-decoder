@@ -1,25 +1,27 @@
-<h1>Listing vehicles</h1>
+<div class="row" ng-controller="VehicleCtrl">
+  <div class="col-xs-12 col-sm-6 col-md-12 col-white">
+    <h2><%= Vehicle.model_name.human(count: 2) %></h2>
+    <ul class="table">
+      <li ng-repeat="vehicle in vehicles | orderBy:'id':true">
+        <!-- <a href ng-click="expandVehicle(vehicle)">{{vehicle.full_name}}</a> -->
+        <h3>{{vehicle.full_name}}</h3>
+        <div class="vehicle-details"><a href ng-click="deleteVehicle(vehicle)">Destroy</a></div>
+      </li>
+    </ul>
 
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+    <ul class="pagination pull-right">
+      <li ng-class="{disabled: currentPage == 1}">
+        <a href ng-click="previousPage()">« Prev</a>
+      </li>
+      <li ng-repeat="n in [] | range:total_pages"
+        ng-class="{active: n == currentPage - 1}"
+        ng-click="setPage(n + 1)">
+        <a href ng-bind="n + 1">1</a>
+      </li>
+      <li ng-class="{disabled: currentPage == total_pages}">
+        <a href ng-click="nextPage()">Next »</a>
+      </li>
+    </ul>
 
-  <tbody>
-    <% @vehicles.each do |vehicle| %>
-      <tr>
-        <td><%= link_to 'Show', vehicle %></td>
-        <td><%= link_to 'Edit', edit_vehicle_path(vehicle) %></td>
-        <td><%= link_to 'Destroy', vehicle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Vehicle', new_vehicle_path %>
+  </div>
+</div>

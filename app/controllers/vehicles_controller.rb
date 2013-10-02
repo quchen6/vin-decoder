@@ -7,11 +7,11 @@ class VehiclesController < ApplicationController
   # GET /vehicles
   # GET /vehicles.json
   def index
-    @vehicles = Vehicle.last(5)
+    @vehicles = Vehicle.order("id desc").paginate(:page => params[:page], :per_page => 10)
 
     respond_to do |format|
       format.html
-      format.json{ render json: @vehicles.as_json(methods: [:full_name]) }
+      format.json{ render json: {vehicles: @vehicles.as_json(methods: [:full_name]), total_pages: @vehicles.total_pages} }
     end
   end
 

@@ -6,7 +6,20 @@ body{
 }
 
 h2{
-	font-family: Scala, serif;
+	font-family: 				Scala, serif;
+}
+
+h3{
+	font-family: 				"ProximaNovaRegular", Helvetica Neue, Helvetica, sans-serif;
+	font-weight: 				200;
+}
+
+h3{
+	font-size: 					18px;
+	text-align: left;
+	float: left;
+	width: 60%;
+	margin-top: -10px;
 }
 
 div.col-white{
@@ -31,9 +44,20 @@ ul.table {
 	padding-left: 			0;
 }
 
-ul.table li{
+ul.table li {
+	padding: 						25px 20px 20px 20px;
+	list-style: 				none;
+	background: 				#F9F9F9;
+	border: 						1px solid #d8d7d9;
+	margin-bottom: 			10px;
+	margin-left: 				0;
+}
+
+ul.table.small li{
 	padding: 						5px 5px 5px 5px;
 	list-style: 				none;
+	background:					transparent;
+	border:							0px solid transparent;
 	border-bottom: 			1px solid #d8d7d9;
 	margin-bottom: 			10px;
 	margin-left: 				0;
@@ -48,3 +72,18 @@ a:hover {
 	color:							#de5e42;
 	text-decoration: 		underline;
 }
+
+div.vehicle-details{
+	text-align: 				right;
+	width: 							40%;
+	float: 							right;
+	padding: 						10px;
+	border-left: 				1px solid #ededed;
+	margin: 						-26px -20px 0 -20px;
+	padding-top: 				5px;
+	padding-bottom:		 	5px;
+	height: 						47px;
+	line-height: 				35px;
+}
+
+

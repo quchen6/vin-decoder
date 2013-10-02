@@ -52,8 +52,8 @@
 
   <div class="col-xs-12 col-sm-6 col-md-4 col-white">
     <h2>Recent Searches</h2>
-    <ul class="table">
-      <li ng-repeat="vehicle in vehicles | orderBy:'id':true">
+    <ul class="table small">
+      <li ng-repeat="vehicle in vehicles | orderBy:'id':true | limitTo:5">
         <a href ng-click="expandVehicle(vehicle)">{{vehicle.full_name}}</a>
       </li>
     </ul>
