@@ -20,9 +20,8 @@ module HomeHelper
 		text   		= Vehicle.human_attribute_name(field.to_sym)
 		tooltip		= I18n.t("activerecord.tooltips.vehicle.#{field}", default: '')
 		if tooltip.present?
-			# text = "<a href class='bootstrap-tooltip' data-original-title='#{tooltip}'>#{text}</a>"
-			text = "#{text}&nbsp;<a href class='bootstrap-tooltip' data-original-title='#{tooltip}'>" + 
-				"<span class='glyphicon glyphicon-info-sign'></span></a>"
+			text 		= "#{text}&nbsp;<a href class='bootstrap-tooltip' data-original-title='#{tooltip}'>" + 
+								"<span class='glyphicon glyphicon-info-sign'></span></a>"
 		end
 
 		text

@@ -57,7 +57,7 @@ describe('Vehicle Controller', function() {
       });
 
       it("resets new vehicle", function(){
-        expect($rootScope.newVehicle)     .toEqual({});
+        expect($rootScope.newVehicle.vin).toEqual('');
       });
 
       it("adds the new vehicle to the list", function(){
