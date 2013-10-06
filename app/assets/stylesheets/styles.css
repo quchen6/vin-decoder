@@ -16,19 +16,19 @@ h3{
 
 h3{
 	font-size: 					18px;
-	text-align: left;
-	float: left;
-	width: 60%;
-	margin-top: -10px;
+	text-align: 				left;
+	float: 							left;
+	width: 							60%;
+	margin-top: 				-10px;
 }
 
 span.section-header{
-	color: #485667;
-	margin-bottom: 20px;
-	font-size: 28px;
-	font-weight: 200;
-	font-family: Scala, serif;
-	line-height: 30px;
+	color: 							#485667;
+	margin-bottom: 			20px;
+	font-size: 					28px;
+	font-weight: 				200;
+	font-family: 				Scala, serif;
+	line-height: 				30px;
 }
 
 div.col-white{
@@ -95,4 +95,6 @@ div.vehicle-details{
 	line-height: 				35px;
 }
 
-
+table.vehicle-details td{
+	width:							200px;
+}

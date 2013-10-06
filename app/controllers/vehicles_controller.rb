@@ -43,7 +43,6 @@ class VehiclesController < ApplicationController
     respond_to do |format|
       if @vehicle.save
         format.html { redirect_to @vehicle, notice: 'Vehicle was successfully created.' }
-        # format.json { render action: 'show', status: :created, location: @vehicle }
         format.json { render json: @vehicle.to_json( methods: [:full_name] ) }
       else
         format.html { render action: 'new' }
