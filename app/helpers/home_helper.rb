@@ -6,13 +6,26 @@ module HomeHelper
 		html 			= ""
 
 		fields.each do |field|
+			is_currency = field == "new_tco" || field == "used_tco"
 			html 		<< "<tr>"
-			html 		<< "<td>#{Vehicle.human_attribute_name(field.to_sym)}</td>"
-      html 		<< "<td>{{lastVehicle.#{field}}}</td>"
+			html 		<< "<td>#{set_details_vehicle_text(field)}</td>"
+      html 		<< "<td>{{lastVehicle.#{field} #{' | currency' if is_currency} }}</td>"
 			html 		<< "</tr>"
 		end
 		
 		raw html
+	end
+
+	def set_details_vehicle_text field
+		text   		= Vehicle.human_attribute_name(field.to_sym)
+		tooltip		= I18n.t("activerecord.tooltips.vehicle.#{field}", default: '')
+		if tooltip.present?
+			# text = "<a href class='bootstrap-tooltip' data-original-title='#{tooltip}'>#{text}</a>"
+			text = "#{text}&nbsp;<a href class='bootstrap-tooltip' data-original-title='#{tooltip}'>" + 
+				"<span class='glyphicon glyphicon-info-sign'></span></a>"
+		end
+
+		text
 	end
 
 end

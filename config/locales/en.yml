@@ -36,4 +36,8 @@ en:
       vehicle:
         vin: "VIN"
         new_tco: "New TCO"
-        used_tco: "Used TCO"
+        used_tco: "Preowned TCO"
+    tooltips:
+      vehicle:
+        new_tco: The Edmunds True Cost to Own based on your location for new vehicles
+        used_tco: The Edmunds True Cost to Own based on your location for preowned vehicles
