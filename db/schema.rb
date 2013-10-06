@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131006193802) do
+ActiveRecord::Schema.define(version: 20131006205945) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20131006193802) do
     t.string   "body_type"
     t.string   "style"
     t.json     "extra_attributes"
+    t.integer  "style_ids",         default: [], array: true
   end
 
 end

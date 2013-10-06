@@ -22,6 +22,7 @@ class Vehicle < ActiveRecord::Base
 			vehicle.body_type	 					= data["categories"]["PRIMARY_BODY_TYPE"].try :first
 			vehicle.style	 							= data["categories"]["Vehicle Style"].try :first
 			vehicle.extra_attributes	 	= data["attributeGroups"]
+			vehicle.style_ids 					= data["styleIds"]
 		rescue RestClient::BadRequest
 			vehicle.errors.add :vin, :invalid
 		end
