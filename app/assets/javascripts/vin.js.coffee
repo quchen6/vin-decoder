@@ -21,6 +21,7 @@ app.filter "range", ->
   $scope.currentPage      = 1
   $scope.totalPages       = 0
 
+  # Load vehicles and get paging info
   $scope.loadVehicles = ->
     Vehicle.query({page: $scope.currentPage}, ( (data) ->
       $scope.vehicles     = data.vehicles
@@ -33,10 +34,11 @@ app.filter "range", ->
       $scope.totalPages   = data
     )
 
+  # Search for a vehicle by using the VIN
   $scope.searchByVin = ->
     vehicle               = Vehicle.save($scope.newVehicle, (->
       $scope.lastVehicle  = vehicle
-      $scope.newVehicle   = {}
+      $scope.newVehicle.vin   = ""
       $scope.vehicles.push(vehicle)
     ), 
     (data) ->
@@ -46,6 +48,7 @@ app.filter "range", ->
   $scope.setLastVehicle = ->
     $scope.lastVehicle    = $scope.vehicles.last
 
+  # Get a vehicle by id
   $scope.expandVehicle = (vehicle) ->
     $scope.lastVehicle    = Vehicle.get({id: vehicle.id})
 
@@ -73,5 +76,18 @@ app.filter "range", ->
       (Math.min($scope.offset + $scope.perPage, $scope.totalEntries)) + 
       " of " + ($scope.totalEntries) + " total"
 
+  # Get the current location of the user to get accurate TCO
+  $scope.getLocation = ->
+    if (navigator.geolocation)
+      navigator.geolocation.getCurrentPosition($scope.showPosition);
+
+  # Callback for getLocation. Sets the zip on the page
+  $scope.showPosition = (position) ->
+    point                   = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);  
+    new google.maps.Geocoder().geocode({'latLng': point}, (res, status) ->
+      $scope.newVehicle.zip = res[0].formatted_address.match(/,\s\w{2}\s(\d{5})/)[1]
+    )
+
   $scope.loadVehicles()
+  $scope.getLocation()
 ]

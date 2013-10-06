@@ -1,14 +1,18 @@
 class Vehicle < ActiveRecord::Base
 
 	# validates 		:year, :model, :make, presence: true
-	validate 			:validate_vin
+	validate 				:validate_vin
 
-	def self.new_from_vin vin
+	attr_accessor 	:zip
+
+	def self.new_from_vin vin, zip
 		vehicle 											= Vehicle.new
 
 		begin
-			data 												= VinDecoder.new(vin).data
+			decoder 										= VinDecoder.new(vin, zip)
+			data 												= decoder.data
 			vehicle.vin 								= vin
+			vehicle.zip 								= zip
 			vehicle.year								= data["year"].try :to_i
 			vehicle.make								= data["makeName"].try :titleize
 			vehicle.model								= data["modelName"].try :titleize
@@ -23,6 +27,8 @@ class Vehicle < ActiveRecord::Base
 			vehicle.style	 							= data["categories"]["Vehicle Style"].try :first
 			vehicle.extra_attributes	 	= data["attributeGroups"]
 			vehicle.style_ids 					= data["styleIds"]
+			vehicle.new_tco 						= decoder.new_tco
+			vehicle.used_tco 						= decoder.used_tco
 		rescue RestClient::BadRequest
 			vehicle.errors.add :vin, :invalid
 		end

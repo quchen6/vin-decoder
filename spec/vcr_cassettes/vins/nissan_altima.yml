@@ -21,16 +21,16 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 01 Oct 2013 00:16:52 GMT
+      - Sun, 06 Oct 2013 18:46:04 GMT
       P3p:
       - policyref="http://www.edmunds.com/w3c/p3p.xml",CP="IDC DSP COR CURa ADMa DEVa
         TAIa OUR BUS IND UNI COM NAV INT"
       Server:
       - Apache-Coyote/1.1
       X-Environment:
-      - Prod-2
+      - ProdA
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1c-34.mashery.com
+      - prod-j-worker-us-east-1b-33.mashery.com
       Transfer-Encoding:
       - chunked
       Connection:
@@ -39,7 +39,7 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"styleHolder":[{"makeId":200000201,"year":2013,"makeName":"Nissan","makeNiceName":"nissan","modelId":"Nissan_Altima","modelName":"Altima","modelNiceName":"altima","modelYearId":100537289,"transmissionType":"AUTOMATIC","engineType":"gas","engineCompressorType":"NA","engineFuelType":"regular
         unleaded","engineCylinder":4,"engineSize":2.5,"trim":{},"categories":{"PRIMARY_BODY_TYPE":["Car"],"Vehicle
-        Style":["Sedan"],"Vehicle Type":["Car"]},"attributeGroups":{"MAIN":{"id":1,"name":"MAIN","attributes":{"USE_IN_LEADS_FORM":{"id":637,"name":"USE_IN_LEADS_FORM","value":"Y"},"USE_IN_NEW":{"id":10,"name":"USE_IN_NEW","value":"Y"},"NAME":{"id":1,"name":"NAME"},"WORKFLOWSTATUS":{"id":9223372036854775806,"name":"WORKFLOWSTATUS","value":"Published"},"USE_IN_FUTURE":{"id":595,"name":"USE_IN_FUTURE","value":"N"},"USE_IN_PRE_PRODUCTION":{"id":12,"name":"USE_IN_PRE_PRODUCTION","value":"N"},"USE_IN_USED":{"id":11,"name":"USE_IN_USED","value":"Y"}}},"AIR_CONDITIONING":{"id":9,"name":"AIR_CONDITIONING","attributes":{"FRONT_AIR_CONDITIONING_ZONES":{"id":85,"name":"FRONT_AIR_CONDITIONING_ZONES"},"FRONT_AIR_CONDITIONING":{"id":84,"name":"FRONT_AIR_CONDITIONING"},"REAR_HEAT":{"id":88,"name":"REAR_HEAT","value":"rear
+        Style":["Sedan"],"Vehicle Type":["Car"]},"attributeGroups":{"MAIN":{"id":1,"name":"MAIN","attributes":{"USE_IN_LEADS_FORM":{"id":637,"name":"USE_IN_LEADS_FORM","value":"Y"},"USE_IN_NEW":{"id":10,"name":"USE_IN_NEW","value":"Y"},"NAME":{"id":1,"name":"NAME"},"WORKFLOWSTATUS":{"id":9223372036854775806,"name":"WORKFLOWSTATUS","value":"Completed"},"USE_IN_FUTURE":{"id":595,"name":"USE_IN_FUTURE","value":"N"},"USE_IN_PRE_PRODUCTION":{"id":12,"name":"USE_IN_PRE_PRODUCTION","value":"N"},"USE_IN_USED":{"id":11,"name":"USE_IN_USED","value":"Y"}}},"AIR_CONDITIONING":{"id":9,"name":"AIR_CONDITIONING","attributes":{"FRONT_AIR_CONDITIONING_ZONES":{"id":85,"name":"FRONT_AIR_CONDITIONING_ZONES"},"FRONT_AIR_CONDITIONING":{"id":84,"name":"FRONT_AIR_CONDITIONING"},"REAR_HEAT":{"id":88,"name":"REAR_HEAT","value":"rear
         ventilation ducts"}}},"LEGACY":{"id":64,"name":"LEGACY","attributes":{"CHROME_ID":{"id":691,"name":"CHROME_ID"}}},"CRASH_TEST_RATINGS":{"id":16,"name":"CRASH_TEST_RATINGS","attributes":{"BUMPER_BASH":{"id":134,"name":"BUMPER_BASH","value":"Not
         Tested"},"IIHS_ROOF_STRENGTH_TEST_RESULTS":{"id":140,"name":"IIHS_ROOF_STRENGTH_TEST_RESULTS"},"IIHS_REAR_CRASH_PROTECTION/HEAD_RESTRAINT_RATINGS":{"id":136,"name":"IIHS_REAR_CRASH_PROTECTION/HEAD_RESTRAINT_RATINGS"},"IIHS_SMALL_OVERLAP_FRONT_TEST_RESULTS":{"id":690,"name":"IIHS_SMALL_OVERLAP_FRONT_TEST_RESULTS","value":"Acceptable"},"IIHS_MODERATE_OVERLAP_FRONT_TEST_RESULTS":{"id":137,"name":"IIHS_MODERATE_OVERLAP_FRONT_TEST_RESULTS","value":"Good"},"IIHS_SIDE_IMPACT_TEST_RESULTS":{"id":141,"name":"IIHS_SIDE_IMPACT_TEST_RESULTS","value":"Good"}}},"BRAKE_SYSTEM":{"id":11,"name":"BRAKE_SYSTEM","attributes":{"REAR_BRAKE_WIDTH":{"id":108,"name":"REAR_BRAKE_WIDTH","value":"0.4"},"FRONT_BRAKE_WIDTH":{"id":105,"name":"FRONT_BRAKE_WIDTH","value":"1.0"},"REAR_BRAKE_TYPE":{"id":109,"name":"REAR_BRAKE_TYPE","value":"disc"},"ELECTRONIC_BRAKEFORCE_DISTRIBUTION":{"id":102,"name":"ELECTRONIC_BRAKEFORCE_DISTRIBUTION","value":"electronic
         brakeforce distribution"},"FRONT_BRAKE_DIAMETER":{"id":104,"name":"FRONT_BRAKE_DIAMETER","value":"11.7"},"FRONT_BRAKE_TYPE":{"id":106,"name":"FRONT_BRAKE_TYPE","value":"ventilated
@@ -68,7 +68,7 @@ http_interactions:
         bar"},"FRONT_SUSPENSION_TYPE":{"id":386,"name":"FRONT_SUSPENSION_TYPE","value":"MacPherson
         strut"}}},"PRICING":{"id":3,"name":"PRICING","attributes":{"MSRP":{"id":38,"name":"MSRP"},"DEALER_INVOICE":{"id":41,"name":"DEALER_INVOICE"},"USED_TMV_RETAIL":{"id":36,"name":"USED_TMV_RETAIL"},"NEW_TMV_OFFER_PRICE_DISCOUNT":{"id":638,"name":"NEW_TMV_OFFER_PRICE_DISCOUNT","value":".02"},"DELIVERY_CHARGE":{"id":40,"name":"DELIVERY_CHARGE","value":"790"},"USED_TMV_PRIVATE_PARTY":{"id":37,"name":"USED_TMV_PRIVATE_PARTY"},"USED_TMV_TRADE_IN":{"id":35,"name":"USED_TMV_TRADE_IN"},"NEW_TMV":{"id":42,"name":"NEW_TMV"}}},"1ST_ROW_SEATS":{"id":4,"name":"1ST_ROW_SEATS","attributes":{"1ST_ROW_SEAT_TYPE":{"id":43,"name":"1ST_ROW_SEAT_TYPE","value":"bucket"},"1ST_ROW_UPHOLSTERY":{"id":46,"name":"1ST_ROW_UPHOLSTERY"},"NUMBER_OF_1ST_ROW_HEADRESTS":{"id":44,"name":"NUMBER_OF_1ST_ROW_HEADRESTS","value":"2"}}},"CARGO_DIMENSIONS":{"id":12,"name":"CARGO_DIMENSIONS","attributes":{"CARGO_CAPACITY,_ALL_SEATS_IN_PLACE":{"id":120,"name":"CARGO_CAPACITY,_ALL_SEATS_IN_PLACE","value":"15.4"}}},"TRACTION/STABILITY_CONTROL":{"id":45,"name":"TRACTION/STABILITY_CONTROL","attributes":{"STABILITY_CONTROL":{"id":394,"name":"STABILITY_CONTROL","value":"stability
         control"},"TRACTION_CONTROL":{"id":395,"name":"TRACTION_CONTROL","value":"traction
-        control"}}},"NCI_STANDARD_FACET":{"id":-100,"name":"NCI_STANDARD_FACET","attributes":{"CD_MP3_PLAYBACK":{"id":0,"name":"CD_MP3_PLAYBACK"},"TIRE_PRESSURE_MONITORING":{"id":0,"name":"TIRE_PRESSURE_MONITORING"},"REMOTE_ANTI_THEFT_ALARM_SYSTEM":{"id":0,"name":"REMOTE_ANTI_THEFT_ALARM_SYSTEM"},"SIDE_AIRBAGS:_DUAL_FRONT":{"id":0,"name":"SIDE_AIRBAGS:_DUAL_FRONT"},"IN_DASH_CD:_SINGLE_CD_PLAYER":{"id":0,"name":"IN_DASH_CD:_SINGLE_CD_PLAYER"},"KEYLESS_IGNITION":{"id":0,"name":"KEYLESS_IGNITION"},"CHILD_SEAT_ANCHORS":{"id":0,"name":"CHILD_SEAT_ANCHORS"},"PRE_WIRED_FOR_PHONE":{"id":0,"name":"PRE_WIRED_FOR_PHONE"},"1ST_ROW_SEATS:_BUCKET":{"id":0,"name":"1ST_ROW_SEATS:_BUCKET"},"STABILITY_CONTROL":{"id":0,"name":"STABILITY_CONTROL"},"TRACTION_CONTROL":{"id":0,"name":"TRACTION_CONTROL"}}},"STYLE_INFO":{"id":52,"name":"STYLE_INFO","attributes":{"EPA_CLASS":{"id":444,"name":"EPA_CLASS","value":"Midsize
+        control"}}},"NCI_STANDARD_FACET":{"id":-100,"name":"NCI_STANDARD_FACET","attributes":{"CD_MP3_PLAYBACK":{"id":0,"name":"CD_MP3_PLAYBACK"},"TIRE_PRESSURE_MONITORING":{"id":0,"name":"TIRE_PRESSURE_MONITORING"},"REMOTE_ANTI_THEFT_ALARM_SYSTEM":{"id":0,"name":"REMOTE_ANTI_THEFT_ALARM_SYSTEM"},"SIDE_AIRBAGS:_DUAL_FRONT":{"id":0,"name":"SIDE_AIRBAGS:_DUAL_FRONT"},"KEYLESS_IGNITION":{"id":0,"name":"KEYLESS_IGNITION"},"IN_DASH_CD:_SINGLE_CD_PLAYER":{"id":0,"name":"IN_DASH_CD:_SINGLE_CD_PLAYER"},"CHILD_SEAT_ANCHORS":{"id":0,"name":"CHILD_SEAT_ANCHORS"},"PRE_WIRED_FOR_PHONE":{"id":0,"name":"PRE_WIRED_FOR_PHONE"},"1ST_ROW_SEATS:_BUCKET":{"id":0,"name":"1ST_ROW_SEATS:_BUCKET"},"STABILITY_CONTROL":{"id":0,"name":"STABILITY_CONTROL"},"TRACTION_CONTROL":{"id":0,"name":"TRACTION_CONTROL"}}},"STYLE_INFO":{"id":52,"name":"STYLE_INFO","attributes":{"EPA_CLASS":{"id":444,"name":"EPA_CLASS","value":"Midsize
         Cars"},"STYLE_END_DATE":{"id":436,"name":"STYLE_END_DATE"},"TRIM_LEVEL":{"id":28,"name":"TRIM_LEVEL"},"FLEET":{"id":22,"name":"FLEET","value":"consumer"},"TMV_CATEGORY":{"id":596,"name":"TMV_CATEGORY","value":"Premium
         Midsize"},"VEHICLE_SIZE_CLASS":{"id":449,"name":"VEHICLE_SIZE_CLASS","value":"Midsize"},"LONG_NAME":{"id":0,"name":"LONG_NAME"},"PRIMARY_BODY_TYPE":{"id":447,"name":"PRIMARY_BODY_TYPE","value":"Car"},"STYLE_START_DATE":{"id":435,"name":"STYLE_START_DATE"},"WHERE_BUILT":{"id":670,"name":"WHERE_BUILT","value":"United
         States"},"VEHICLE_STYLE":{"id":636,"name":"VEHICLE_STYLE","value":"Sedan"},"MANUFACTURER_CODE":{"id":438,"name":"MANUFACTURER_CODE"},"STANDARD_VEHICLE_DESCRIPTION":{"id":441,"name":"STANDARD_VEHICLE_DESCRIPTION"},"STYLE_LINK_CODE":{"id":442,"name":"STYLE_LINK_CODE"}}},"STEERING":{"id":40,"name":"STEERING","attributes":{"POWER_STEERING":{"id":348,"name":"POWER_STEERING","value":"electric
@@ -106,9 +106,9 @@ http_interactions:
         Adjustable Driver''s Seat"},"TMVU_FEATURE_DESCRIPTION_2610000042":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_2610000042","value":"4-Way
         Manual Front Passenger Seat"},"TMVU_FEATURE_DESCRIPTION_3810000008":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3810000008","value":"Power
         Exterior Mirrors"},"TMVU_FEATURE_DESCRIPTION_3210000022":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3210000022","value":"Steering
-        Wheel Phone Controls"},"TMVU_FEATURE_DESCRIPTION_1310000015":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1310000015","value":"Multi-Link
-        Rear Suspension"},"TMVU_FEATURE_DESCRIPTION_3210000021":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3210000021","value":"Overhead
-        Console with Storage"},"TMVU_FEATURE_DESCRIPTION_1910000004":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1910000004","value":"Rear
+        Wheel Phone Controls"},"TMVU_FEATURE_DESCRIPTION_3210000021":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3210000021","value":"Overhead
+        Console with Storage"},"TMVU_FEATURE_DESCRIPTION_1310000015":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1310000015","value":"Multi-Link
+        Rear Suspension"},"TMVU_FEATURE_DESCRIPTION_1910000004":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1910000004","value":"Rear
         Disc Brakes"},"TMVU_FEATURE_DESCRIPTION_1910000003":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1910000003","value":"Front
         Ventilated Disc Brakes"},"TMVU_FEATURE_DESCRIPTION_1910000001":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1910000001","value":"Electronic
         Brakeforce Distribution"},"TMVU_FEATURE_DESCRIPTION_1910000000":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1910000000","value":"Braking
@@ -153,7 +153,87 @@ http_interactions:
         anti-theft alarm system"},"2_STAGE_UNLOCKING":{"id":325,"name":"2_STAGE_UNLOCKING","value":"remote
         2-stage unlocking"}}},"MISC._INTERIOR_FEATURES":{"id":30,"name":"MISC._INTERIOR_FEATURES","attributes":{"CARGO_AREA_LIGHT":{"id":288,"name":"CARGO_AREA_LIGHT","value":"trunk
         light"},"READING_LIGHTS":{"id":294,"name":"READING_LIGHTS","value":"front
-        and rear reading lights"}}}},"squishVins":[{"squishVin":"1N4AL3APDC","engineNames":["4INAG2.5"],"squishVinTransmissions":[{"transmissionType":"CVT","numberOfSpeeds":0}]},{"squishVin":"1N4AL3APDN","engineNames":["4INAG2.5"],"squishVinTransmissions":[{"transmissionType":"CVT","numberOfSpeeds":0}]}],"publicationState":"NEW_USED","styleIds":[200418416,200444018,101404650,200418417,200418415]}]}'
+        and rear reading lights"}}}},"squishVins":[{"squishVin":"1N4AL3APDN","engineNames":["4INAG2.5"],"squishVinTransmissions":[{"transmissionType":"CVT","numberOfSpeeds":0}]},{"squishVin":"1N4AL3APDC","engineNames":["4INAG2.5"],"squishVinTransmissions":[{"transmissionType":"CVT","numberOfSpeeds":0}]}],"publicationState":"NEW_USED","styleIds":[200418417,200444018,200418416,200418415,101404650]}]}'
     http_version: 
-  recorded_at: Tue, 01 Oct 2013 01:09:12 GMT
+  recorded_at: Sun, 06 Oct 2013 22:01:08 GMT
+- request:
+    method: get
+    uri: https://api.edmunds.com/v1/api/tco/newtotalcashpricebystyleidandzip/200418417/75771?api_key=vk8s2ze9y5tej7bwjp8c2v6g&fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 06 Oct 2013 20:53:27 GMT
+      P3p:
+      - policyref="http://www.edmunds.com/w3c/p3p.xml",CP="IDC DSP COR CURa ADMa DEVa
+        TAIa OUR BUS IND UNI COM NAV INT"
+      Server:
+      - Apache-Coyote/1.1
+      X-Environment:
+      - ProdA
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1b-30.mashery.com
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"value":27062.0}'
+    http_version: 
+  recorded_at: Sun, 06 Oct 2013 22:01:08 GMT
+- request:
+    method: get
+    uri: https://api.edmunds.com/v1/api/tco/usedtotalcashpricebystyleidandzip/200418417/75771?api_key=vk8s2ze9y5tej7bwjp8c2v6g&fmt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 06 Oct 2013 20:52:04 GMT
+      P3p:
+      - policyref="http://www.edmunds.com/w3c/p3p.xml",CP="IDC DSP COR CURa ADMa DEVa
+        TAIa OUR BUS IND UNI COM NAV INT"
+      Server:
+      - Apache-Coyote/1.1
+      X-Environment:
+      - ProdA
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1b-36.mashery.com
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"value":25352.0}'
+    http_version: 
+  recorded_at: Sun, 06 Oct 2013 22:01:08 GMT
 recorded_with: VCR 2.6.0

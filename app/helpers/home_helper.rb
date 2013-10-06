@@ -1,7 +1,8 @@
 module HomeHelper
 
 	def vehicle_details_table
-		fields 		= %w(vin transmission_type engine_type engine_fuel_type engine_cylinder engine_size size body_type style)
+		fields 		= %w(vin transmission_type engine_type engine_fuel_type 
+									engine_cylinder engine_size size body_type style new_tco used_tco)
 		html 			= ""
 
 		fields.each do |field|
