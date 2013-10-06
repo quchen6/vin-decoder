@@ -11,6 +11,8 @@ class VinDecoder
 
 	protected
 
+	# Connect to the Edmunds API and retrieve the basic vehicle info
+	# using the VIN
 	def decode
 		res 				= RestClient.get "#{BASE_URL}?vin=#{@vin}&fmt=json&api_key=#{EDMUNDS_API_KEY}"
 		parsed_res 	= JSON.parse(res.body)

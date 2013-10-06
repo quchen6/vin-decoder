@@ -15,59 +15,63 @@ app.filter "range", ->
     input
 
 @VehicleCtrl = ["$scope", "Vehicle", ($scope, Vehicle) ->
-  $scope.vinErrors 				= []
-  $scope.currentPage 			= 1
+  $scope.vinErrors        = []
+  $scope.vehicles         = []
+  $scope.newVehicle       = {}
+  $scope.currentPage      = 1
+  $scope.totalPages       = 0
 
   $scope.loadVehicles = ->
-  	Vehicle.query({page: $scope.currentPage}, (data) ->
-  		console.log(data)
-  		$scope.vehicles 		= data.vehicles
-  		$scope.totalPages		= data.total_pages
-  		$scope.offset				= data.offset
-  		$scope.perPage			= data.per_page
-  		$scope.totalEntries	= data.total_entries
-	  )
-  $scope.searchByVin = ->
-    $scope.vinErrors 			= []
-    vehicle 							= Vehicle.save($scope.newVehicle, (->
-    	$scope.lastVehicle	= vehicle
-    	$scope.newVehicle 	= {}
-    	$scope.vehicles.push(vehicle)
-    	console.log(vehicle)), 
+    Vehicle.query({page: $scope.currentPage}, ( (data) ->
+      $scope.vehicles     = data.vehicles
+      $scope.totalPages   = data.total_pages
+      $scope.offset       = data.offset
+      $scope.perPage      = data.per_page
+      $scope.totalEntries = data.total_entries
+    ),
     (data) ->
-    	$scope.vinErrors 		= data.data.full_error_messages
-   	)
+      $scope.totalPages   = data
+    )
+
+  $scope.searchByVin = ->
+    vehicle               = Vehicle.save($scope.newVehicle, (->
+      $scope.lastVehicle  = vehicle
+      $scope.newVehicle   = {}
+      $scope.vehicles.push(vehicle)
+    ), 
+    (data) ->
+      $scope.vinErrors    = data.data.full_error_messages
+    )
 
   $scope.setLastVehicle = ->
-  	$scope.lastVehicle 		= $scope.vehicles.last
+    $scope.lastVehicle    = $scope.vehicles.last
 
   $scope.expandVehicle = (vehicle) ->
-  	$scope.lastVehicle 		= Vehicle.get({id: vehicle.id})
+    $scope.lastVehicle    = Vehicle.get({id: vehicle.id})
 
   $scope.deleteVehicle = (vehicle) ->
-  	console.log(vehicle)
-  	Vehicle.delete( {id: vehicle.id}, -> 
-  		$scope.loadVehicles()
-  	)
+    Vehicle.delete( {id: vehicle.id}, -> 
+      $scope.loadVehicles()
+    )
 
   $scope.setPage = (page) ->
-  	$scope.currentPage = page
-  	$scope.loadVehicles()
+    $scope.currentPage = page
+    $scope.loadVehicles()
 
   $scope.nextPage = ->
-  	if $scope.currentPage < $scope.totalPages
-	  	$scope.currentPage += 1
-	  	$scope.loadVehicles()
+    if $scope.currentPage < $scope.totalPages
+      $scope.currentPage += 1
+      $scope.loadVehicles()
 
   $scope.previousPage = ->
-  	if $scope.currentPage > 1
-  		$scope.currentPage -= 1
-  		$scope.loadVehicles()
+    if $scope.currentPage > 1
+      $scope.currentPage -= 1
+      $scope.loadVehicles()
 
   $scope.pageInfo = ->
-  	return "Showing entries " + ($scope.offset + 1) + " - " + 
-  		(Math.min($scope.offset + $scope.perPage, $scope.totalEntries)) + 
-  		" of " + ($scope.totalEntries) + " total"
+    return "Showing entries " + ($scope.offset + 1) + " - " + 
+      (Math.min($scope.offset + $scope.perPage, $scope.totalEntries)) + 
+      " of " + ($scope.totalEntries) + " total"
 
   $scope.loadVehicles()
 ]
