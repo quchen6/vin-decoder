@@ -98,3 +98,33 @@ div.vehicle-details{
 table.vehicle-details td{
 	width:							200px;
 }
+
+table.list{
+	width: 							100%;
+	border-collapse: 		separate;
+  border-spacing:			0 10px;
+}
+
+table.list tr{
+}
+
+table.list td{
+	padding: 						15px;
+	background: 				#F9F9F9;
+	border: 						1px solid #d8d7d9;
+	border-left: 				1px solid #ededed;
+	border-right: 			1px solid #ededed;
+}
+
+table.list td.first{
+	font-family: 				"ProximaNovaRegular", Helvetica Neue, Helvetica, sans-serif;
+	font-weight: 				200;
+	font-size:					18px;
+	border-left: 				1px solid #d8d7d9;
+}
+
+table.list td.last{
+	text-align: 				right;
+	/*width: 							20%;*/
+	border-right: 			1px solid #d8d7d9;
+}

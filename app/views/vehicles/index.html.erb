@@ -8,19 +8,29 @@
         <div>{{pageInfo()}}</div>
       </div>
     </div>
-    <br/>
 
-    <ul class="table">
-      <li ng-repeat="vehicle in vehicles | orderBy:'id':true">
-        <h3>{{vehicle.full_name}}</h3>
-        <div class="vehicle-details">
+    <table class="list">
+      <tr ng-repeat="vehicle in vehicles | orderBy:'id':true">
+        <td class="first">
+          {{vehicle.full_name}}
+        </td>
+
+        <td>{{vehicle.vin}}</td>
+
+        <td>{{vehicle.body_type}}</td>
+
+        <td>{{vehicle.style}}</td>
+
+        <td>{{vehicle.new_tco | currency}}</td>
+
+        <td class="last">
           <a data-toggle="modal" href="#vehicle-details-modal" ng-click="setLastVehicle(vehicle)"><%= t "pages.actions.details" %></a> |
           <a href ng-click="deleteVehicle(vehicle, '<%= t "pages.actions.confirm" %>')" >
             <%= t "pages.actions.destroy" %>
           </a>
-        </div>
-      </li>
-    </ul>
+        </td>
+      </tr>
+    </table>
 
     <div class="clearfix">
       <div class="pull-right">
