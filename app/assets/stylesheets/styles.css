@@ -128,3 +128,7 @@ table.list td.last{
 	/*width: 							20%;*/
 	border-right: 			1px solid #d8d7d9;
 }
+
+div.bootbox-body{
+	font-size:					18px;
+}
