@@ -3,6 +3,7 @@ FleetioVin::Application.routes.draw do
   resources :vehicles
 
   get "home/index"
+  get "home/set_locale"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

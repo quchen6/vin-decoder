@@ -19,13 +19,13 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+es:
 
-  app_name: VIN Decoder
+  app_name: Decodificador de VIN
 
   menu:
-    home: Home
-    language: Language
+    home: Inicio
+    language: Idioma
 
   activerecord:
     errors:
@@ -33,33 +33,33 @@ en:
         vehicle:
           attributes:
             vin:
-              invalid: "does not appear to be correct. Please try again."
+              invalid: "no parecer ser correcto. Favor de intentar de nuevo."
     models:
       vehicle:
-        one: Vehicle
-        other: Vehicles
+        one: Vehiculo
+        other: Vehiculos
     attributes:
       vehicle:
         vin: "VIN"
-        new_tco: "New TCO"
-        used_tco: "Preowned TCO"
-        transmission_type: "Transmission Type"
-        engine_type: "Engine Type"
-        engine_fuel_type: "Fuel Type"
-        engine_cylinder: "No. of Cylinders"
-        engine_size: "Engine Size"
-        size: "Size"
-        body_type: "Body Type"
-        style: "Style"
+        new_tco: "TCO (Nuevo)"
+        used_tco: "TCO (Seminuevo)"
+        transmission_type: Transmisión
+        engine_type: Tipo de Motor
+        engine_fuel_type: Tipo Combustible
+        engine_cylinder: Cylindros
+        engine_size: Tamaño de Motor
+        size: Tamaño
+        body_type: Tipo
+        style: Estilo
     tooltips:
       vehicle:
-        new_tco: The Edmunds True Cost to Own based on your location for new vehicles
-        used_tco: The Edmunds True Cost to Own based on your location for preowned vehicles
+        new_tco: El TCO (Costo Verdadero de Posesión) calculador por Edmunds
+        used_tco: El TCO (Costo Verdadero de Posesión) calculador por Edmunds
 
   pages:
-    vin_search: "VIN Search"
-    recent_searches: Recent Searches
-    search_text: Enter VIN
-    submit: Search
+    vin_search: "Búsqueda de VIN"
+    recent_searches: Búsquedas Recientes
+    search_text: Introduzca VIN
+    submit: Buscar
     actions:
-      destroy: Delete
+      destroy: Borrar

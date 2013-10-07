@@ -12,7 +12,7 @@
     <ul class="table">
       <li ng-repeat="vehicle in vehicles | orderBy:'id':true">
         <h3>{{vehicle.full_name}}</h3>
-        <div class="vehicle-details"><a href ng-click="deleteVehicle(vehicle)">Destroy</a></div>
+        <div class="vehicle-details"><a href ng-click="deleteVehicle(vehicle)"><%= t "pages.actions.destroy" %></a></div>
       </li>
     </ul>
 
