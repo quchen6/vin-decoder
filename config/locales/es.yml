@@ -27,11 +27,17 @@ es:
     home: Inicio
     language: Idioma
 
+  errors:
+    messages:
+      blank: es requerido
+
   activerecord:
     errors:
       models:
         vehicle:
           attributes:
+            base:
+              unknown: "Ha occurido un error desconocido. Favor de intentar de nuevo."
             vin:
               invalid: "no parecer ser correcto. Favor de intentar de nuevo."
     models:

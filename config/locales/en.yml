@@ -32,6 +32,8 @@ en:
       models:
         vehicle:
           attributes:
+            base:
+              unknown: "An unknown error has occurred. Please try again momentarily."
             vin:
               invalid: "does not appear to be correct. Please try again."
     models:

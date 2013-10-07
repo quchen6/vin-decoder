@@ -1,12 +1,14 @@
 class Vehicle < ActiveRecord::Base
 
 	# validates 		:year, :model, :make, presence: true
-	validate 				:validate_vin
+	# validate 				:validate_vin
+	validates 						:vin, presence: true
+	after_validation 			:get_info_from_edmunds, unless: Proc.new{ |x| x.errors.any? }
 
-	attr_accessor 	:zip
+	attr_accessor 				:zip
 
-	def self.new_from_vin vin, zip=75771
-		vehicle 											= Vehicle.new
+	def get_info_from_edmunds
+		vehicle = self
 
 		begin
 			decoder 										= VinDecoder.new(vin, zip)
@@ -31,9 +33,9 @@ class Vehicle < ActiveRecord::Base
 			vehicle.used_tco 						= decoder.used_tco
 		rescue RestClient::BadRequest
 			vehicle.errors.add :vin, :invalid
+		rescue
+			vehicle.errors.add :base, :unknown
 		end
-
-		vehicle
 	end
 
 	def full_name

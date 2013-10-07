@@ -28,7 +28,7 @@ class VehiclesController < ApplicationController
   # POST /vehicles
   # POST /vehicles.json
   def create
-    @vehicle = Vehicle.new_from_vin(vehicle_params[:vin], params[:zip])
+    @vehicle = Vehicle.new(vehicle_params)
 
     respond_to do |format|
       if @vehicle.save

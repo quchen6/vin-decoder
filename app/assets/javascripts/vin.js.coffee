@@ -17,7 +17,7 @@ app.filter "range", ->
 @VehicleCtrl = ["$scope", "Vehicle", ($scope, Vehicle) ->
   $scope.vinErrors        = []
   $scope.vehicles         = []
-  $scope.newVehicle       = {}
+  $scope.newVehicle       = { vin: "" }
   $scope.currentPage      = 1
   $scope.totalPages       = 0
 
@@ -37,6 +37,7 @@ app.filter "range", ->
   # Search for a vehicle by using the VIN
   $scope.searchByVin = ->
     $scope.setLoading()
+    $scope.vinErrors      = []
     vehicle               = Vehicle.save($scope.newVehicle, (->
       $scope.lastVehicle  = vehicle
       $scope.newVehicle.vin   = ""
