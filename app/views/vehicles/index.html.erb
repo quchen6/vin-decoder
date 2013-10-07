@@ -23,7 +23,7 @@
         <div class="clearfix"></div>
         <ul class="pagination">
           <li ng-class="{disabled: currentPage == 1}">
-            <a href ng-click="previousPage()">« Prev</a>
+            <a href ng-click="previousPage()">« <%= t "pages.paging.previous" %></a>
           </li>
           <li ng-repeat="n in [] | range:totalPages"
             ng-class="{active: n == currentPage - 1}"
@@ -31,7 +31,7 @@
             <a href ng-bind="n + 1">1</a>
           </li>
           <li ng-class="{disabled: currentPage == totalPages}">
-            <a href ng-click="nextPage()">Next »</a>
+            <a href ng-click="nextPage()"><%= t "pages.paging.next" %> »</a>
           </li>
         </ul>
       </div>

@@ -63,3 +63,6 @@ es:
     submit: Buscar
     actions:
       destroy: Borrar
+    paging:
+      next: Siguiente
+      previous: Anterior
