@@ -1,28 +1,21 @@
-== README
+== VIN Decoder
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A quick overview of some features:
 
-Things you may want to cover:
+* VIN Decoder
 
-* Ruby version
+* TCO (True Cost of Ownership) Estimator
 
-* System dependencies
+* AngularJS front end
 
-* Configuration
+* Localization/I18n
 
-* Database creation
+* Postgres arrays for storing Edmunds' Style Ids
 
-* Database initialization
+* Postgres JSON for storing additional Edmunds attributes
 
-* How to run the test suite
+* RSpec for unit testing ruby code
 
-* Services (job queues, cache servers, search engines, etc.)
+* Jasmine for testing JS code
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Bootstrap 3
