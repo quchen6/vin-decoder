@@ -1,6 +1,6 @@
 FleetioVin::Application.routes.draw do
 
-  resources :vehicles
+  resources :vehicles, only: [:index, :show, :create, :destroy]
 
   get "home/index"
   get "home/set_locale"

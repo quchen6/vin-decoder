@@ -26,15 +26,6 @@ class VehiclesController < ApplicationController
     end
   end
 
-  # GET /vehicles/new
-  def new
-    @vehicle = Vehicle.new
-  end
-
-  # GET /vehicles/1/edit
-  def edit
-  end
-
   # POST /vehicles
   # POST /vehicles.json
   def create
@@ -47,20 +38,6 @@ class VehiclesController < ApplicationController
       else
         format.html { render action: 'new' }
         format.json { render json: @vehicle.to_json( methods: [:full_error_messages] ), status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # PATCH/PUT /vehicles/1
-  # PATCH/PUT /vehicles/1.json
-  def update
-    respond_to do |format|
-      if @vehicle.update(vehicle_params)
-        format.html { redirect_to @vehicle, notice: 'Vehicle was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @vehicle.errors, status: :unprocessable_entity }
       end
     end
   end
