@@ -20,11 +20,13 @@ require 'spec_helper'
 
 describe VehiclesController do
 
+  let(:vin)     { "1N4AL3AP4DC295509" }
+
   # This should return the minimal set of attributes required to create a valid
   # Vehicle. As you add validations to Vehicle, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {  }
+    { vin: vin }
   end
 
   # This should return the minimal set of values that should be in the session
