@@ -52,14 +52,17 @@ app.filter "range", ->
   $scope.expandVehicle = (vehicle) ->
     $scope.lastVehicle    = Vehicle.get({id: vehicle.id})
 
-  $scope.deleteVehicle = (vehicle, message, from_modal=false) ->
+  $scope.confirmDeletion = (vehicle, message, from_modal=false) ->
     bootbox.confirm(message, (result) ->
       if(result)
-        Vehicle.delete( {id: vehicle.id}, -> 
-          $scope.loadVehicles()
-        )
+        $scope.deleteVehicle(vehicle)
       else if from_modal
         $('#vehicle-details-modal').modal('show')
+    )
+
+  $scope.deleteVehicle = (vehicle) ->
+    Vehicle.delete( {id: vehicle.id}, -> 
+      $scope.loadVehicles()
     )
 
   $scope.setPage = (page) ->
