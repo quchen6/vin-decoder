@@ -5,7 +5,7 @@ class Vehicle < ActiveRecord::Base
 
 	attr_accessor 	:zip
 
-	def self.new_from_vin vin, zip
+	def self.new_from_vin vin, zip=75771
 		vehicle 											= Vehicle.new
 
 		begin
