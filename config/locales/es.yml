@@ -66,6 +66,9 @@ es:
       destroy: Borrar
       close: Cerrar
       confirm: Estas seguro?
+    buttons:
+      loading: Cargando ...
+      retry: Reintentar
     paging:
       next: Siguiente
       previous: Anterior

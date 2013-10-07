@@ -36,13 +36,16 @@ app.filter "range", ->
 
   # Search for a vehicle by using the VIN
   $scope.searchByVin = ->
+    $scope.setLoading()
     vehicle               = Vehicle.save($scope.newVehicle, (->
       $scope.lastVehicle  = vehicle
       $scope.newVehicle.vin   = ""
       $scope.vehicles.push(vehicle)
+      $scope.setReady()
     ), 
     (data) ->
       $scope.vinErrors    = data.data.full_error_messages
+      $scope.setFailed()
     )
 
   $scope.setLastVehicle = (vehicle) ->
@@ -64,6 +67,24 @@ app.filter "range", ->
     Vehicle.delete( {id: vehicle.id}, -> 
       $scope.loadVehicles()
     )
+
+  $scope.setLoading = ->
+    button = $("#vehicle-search")
+    button.val( button.data("loading-text") )
+    button.attr("disabled", 'disabled')
+    button.removeClass().addClass("btn").addClass("btn-info")
+
+  $scope.setReady = ->
+    button = $("#vehicle-search")
+    button.val( button.data("original-text") )
+    button.attr("disabled", false)
+    button.removeClass().addClass("btn").addClass("btn-primary")
+
+  $scope.setFailed = ->
+    button = $("#vehicle-search")
+    button.val( button.data("failed-text") )
+    button.attr("disabled", false)
+    button.removeClass().addClass("btn").addClass("btn-warning")
 
   $scope.setPage = (page) ->
     $scope.currentPage = page

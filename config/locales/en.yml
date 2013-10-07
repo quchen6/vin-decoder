@@ -66,6 +66,9 @@ en:
       destroy: Delete
       close: Close
       confirm: Are you sure?
+    buttons:
+      loading: Loading ...
+      retry: Try Again
     paging:
       next: Next
       previous: Previous

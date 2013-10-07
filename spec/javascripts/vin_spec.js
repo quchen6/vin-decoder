@@ -50,6 +50,9 @@ describe('Vehicle Controller', function() {
         createController();
         $httpBackend.flush();
 
+        spyOn($rootScope, 'setLoading')
+        spyOn($rootScope, 'setReady')
+
         $httpBackend.expectPOST("/vehicles").respond(singleVehicle());
         $rootScope.newVehicle = {vin: "123456"}
         $rootScope.searchByVin();
@@ -64,6 +67,14 @@ describe('Vehicle Controller', function() {
         // Should be two because createController 'returns' 1
         expect($rootScope.vehicles.length).toEqual(2);
       });
+
+      it("sets the form status to loading", function(){
+        expect($rootScope.setLoading).toHaveBeenCalled()
+      });
+
+      it("resets the form status to ready after a successful request", function(){
+        expect($rootScope.setReady).toHaveBeenCalled()
+      });
     });
 
     // Test invalid vin
@@ -72,7 +83,9 @@ describe('Vehicle Controller', function() {
         createController();
         $httpBackend.flush();
 
-      $httpBackend.expectPOST("/vehicles").respond(422, {full_error_messages: ["there was an error"] } );
+        spyOn($rootScope, 'setFailed')
+
+        $httpBackend.expectPOST("/vehicles").respond(422, {full_error_messages: ["there was an error"] } );
         $rootScope.newVehicle = {vin: "123456"}
         $rootScope.searchByVin();
         $httpBackend.flush();
@@ -80,6 +93,10 @@ describe('Vehicle Controller', function() {
 
       it("sets the error messages", function(){
         expect($rootScope.vinErrors)    .toEqual(["there was an error"]);
+      });
+
+      it("sets the form status to failed after a failed request", function(){
+        expect($rootScope.setFailed).toHaveBeenCalled()
       });
 
     });

@@ -9,17 +9,21 @@
       <p>
         <div>
           <form ng-submit="searchByVin()">
-            <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %> 
+            <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, 
+              :value => form_authenticity_token) %> 
 
             <div class="form-group">
-              <input type="text" class="form-control" id="vehicle_search" placeholder="<%= t 'pages.search_text' %>" ng-model="newVehicle.vin">
+              <input type="text" class="form-control" id="vehicle_search" 
+                placeholder="<%= t 'pages.search_text' %>" ng-model="newVehicle.vin">
             </div>
 
             <div ng-repeat="error_message in vinErrors">
               <div class="alert alert-danger">{{error_message}}</div>
             </div>
 
-            <input type="submit" class="btn btn-primary" value="<%= t 'pages.submit' %>" />
+            <input id="vehicle-search" type="submit" class="btn btn-primary" 
+              data-original-text="<%= t 'pages.submit' %>" data-failed-text="<%= t 'pages.buttons.retry' %>" 
+              data-loading-text="<%= t 'pages.buttons.loading' %>" value="<%= t 'pages.submit' %>" />
           </form>
         </div>
       </p>
