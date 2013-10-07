@@ -62,4 +62,10 @@ en:
     search_text: Enter VIN
     submit: Search
     actions:
+      details: Details
       destroy: Delete
+      close: Close
+      confirm: Are you sure?
+    paging:
+      next: Next
+      previous: Previous

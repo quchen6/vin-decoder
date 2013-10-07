@@ -4,4 +4,6 @@
 
 $(document).ready( ->
   $('.bootstrap-tooltip').tooltip()
+	$('[data-toggle="confirmation"]').confirmation()
 )
+

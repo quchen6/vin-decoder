@@ -62,7 +62,10 @@ es:
     search_text: Introduzca VIN
     submit: Buscar
     actions:
+      details: Detalles
       destroy: Borrar
+      close: Cerrar
+      confirm: Estas seguro?
     paging:
       next: Siguiente
       previous: Anterior

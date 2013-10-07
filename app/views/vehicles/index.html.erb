@@ -1,3 +1,4 @@
+
 <div class="row" ng-controller="VehicleCtrl">
   <div class="col-xs-12 col-sm-6 col-md-12 col-white">
     <h2><%= Vehicle.model_name.human(count: 2) %></h2>
@@ -12,7 +13,12 @@
     <ul class="table">
       <li ng-repeat="vehicle in vehicles | orderBy:'id':true">
         <h3>{{vehicle.full_name}}</h3>
-        <div class="vehicle-details"><a href ng-click="deleteVehicle(vehicle)"><%= t "pages.actions.destroy" %></a></div>
+        <div class="vehicle-details">
+          <a data-toggle="modal" href="#vehicle-details-modal" ng-click="setLastVehicle(vehicle)"><%= t "pages.actions.details" %></a> |
+          <a href ng-click="deleteVehicle(vehicle, '<%= t "pages.actions.confirm" %>')" >
+            <%= t "pages.actions.destroy" %>
+          </a>
+        </div>
       </li>
     </ul>
 
@@ -39,4 +45,6 @@
     </div>
 
   </div>
+
+  <%= render partial: "details_modal" %>
 </div>

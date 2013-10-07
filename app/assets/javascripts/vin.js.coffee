@@ -45,16 +45,21 @@ app.filter "range", ->
       $scope.vinErrors    = data.data.full_error_messages
     )
 
-  $scope.setLastVehicle = ->
-    $scope.lastVehicle    = $scope.vehicles.last
+  $scope.setLastVehicle = (vehicle) ->
+    $scope.lastVehicle    = vehicle
 
   # Get a vehicle by id
   $scope.expandVehicle = (vehicle) ->
     $scope.lastVehicle    = Vehicle.get({id: vehicle.id})
 
-  $scope.deleteVehicle = (vehicle) ->
-    Vehicle.delete( {id: vehicle.id}, -> 
-      $scope.loadVehicles()
+  $scope.deleteVehicle = (vehicle, message, from_modal=false) ->
+    bootbox.confirm(message, (result) ->
+      if(result)
+        Vehicle.delete( {id: vehicle.id}, -> 
+          $scope.loadVehicles()
+        )
+      else if from_modal
+        $('#vehicle-details-modal').modal('show')
     )
 
   $scope.setPage = (page) ->

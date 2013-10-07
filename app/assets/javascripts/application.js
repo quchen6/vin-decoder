@@ -14,5 +14,9 @@
 //= require jquery_ujs
 //= require angular
 //= require angular-resource
+//= require twitter/bootstrap/transition
+//= require twitter/bootstrap/modal
+//= require twitter/bootstrap/tooltip
+//= require twitter/bootstrap/dropdown
+//= require bootbox.min
 //= require_tree .
-//= require twitter/bootstrap
