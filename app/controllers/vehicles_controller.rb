@@ -21,7 +21,6 @@ class VehiclesController < ApplicationController
   # GET /vehicles/1.json
   def show
     respond_to do |format|
-      format.html
       format.json { render json: @vehicle.to_json( methods: [:full_name] ) }
     end
   end
@@ -33,10 +32,8 @@ class VehiclesController < ApplicationController
 
     respond_to do |format|
       if @vehicle.save
-        format.html { redirect_to @vehicle, notice: 'Vehicle was successfully created.' }
         format.json { render json: @vehicle.to_json( methods: [:full_name] ) }
       else
-        format.html { render action: 'new' }
         format.json { render json: @vehicle.to_json( methods: [:full_error_messages] ), status: :unprocessable_entity }
       end
     end
