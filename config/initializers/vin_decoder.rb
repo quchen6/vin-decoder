@@ -38,6 +38,8 @@ class VinDecoder
 		parsed_res 	= JSON.parse(res.body)
 
 		parsed_res["value"].try :to_i
+	rescue # Sometimes Edmunds cannot calculate the TCO for a vehicle
+		0
 	end
 
 	# Endpoint for the vin decoder

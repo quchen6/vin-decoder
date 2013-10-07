@@ -21,7 +21,7 @@
 
         <td>{{vehicle.style}}</td>
 
-        <td>{{vehicle.new_tco | currency}}</td>
+        <td>{{(vehicle.new_tco || vehicle.used_tco) | currency}}</td>
 
         <td class="last">
           <a data-toggle="modal" href="#vehicle-details-modal" ng-click="setLastVehicle(vehicle)"><%= t "pages.actions.details" %></a> |
