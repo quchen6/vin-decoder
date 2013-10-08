@@ -3,55 +3,57 @@
   <div class="col-xs-12 col-sm-6 col-md-12 col-white">
     <h2><%= Vehicle.model_name.human(count: 2) %></h2>
 
-    <div class="clearfix">
-      <div class="pull-right">
-        <div>{{pageInfo()}}</div>
-      </div>
-    </div>
-
-    <table class="list">
-      <tr ng-repeat="vehicle in vehicles | orderBy:'id':true">
-        <td class="first">
-          {{vehicle.full_name}}
-        </td>
-
-        <td>{{vehicle.vin}}</td>
-
-        <td>{{vehicle.body_type}}</td>
-
-        <td>{{vehicle.style}}</td>
-
-        <td>{{(vehicle.new_tco || vehicle.used_tco) | currency}}</td>
-
-        <td class="last">
-          <a data-toggle="modal" href="#vehicle-details-modal" ng-click="setLastVehicle(vehicle)"><%= t "pages.actions.details" %></a> |
-          <a href ng-click="confirmDeletion(vehicle, '<%= t "pages.actions.confirm" %>')" >
-            <%= t "pages.actions.destroy" %>
-          </a>
-        </td>
-      </tr>
-    </table>
-
-    <div class="clearfix">
-      <div class="pull-right">
-
-        <div class="pull-right">{{pageInfo()}}</div>
-        <div class="clearfix"></div>
-        <ul class="pagination">
-          <li ng-class="{disabled: currentPage == 1}">
-            <a href ng-click="previousPage()">« <%= t "pages.paging.previous" %></a>
-          </li>
-          <li ng-repeat="n in [] | range:totalPages"
-            ng-class="{active: n == currentPage - 1}"
-            ng-click="setPage(n + 1)">
-            <a href ng-bind="n + 1">1</a>
-          </li>
-          <li ng-class="{disabled: currentPage == totalPages}">
-            <a href ng-click="nextPage()"><%= t "pages.paging.next" %> »</a>
-          </li>
-        </ul>
+    <div class="vehicles-wrapper" ng-hide="vehicles.length <= 0">
+      <div class="clearfix">
+        <div class="pull-right">
+          <div>{{pageInfo()}}</div>
+        </div>
       </div>
 
+      <table class="list">
+        <tr ng-repeat="vehicle in vehicles | orderBy:'id':true">
+          <td class="first">
+            {{vehicle.full_name}}
+          </td>
+
+          <td>{{vehicle.vin}}</td>
+
+          <td>{{vehicle.body_type}}</td>
+
+          <td>{{vehicle.style}}</td>
+
+          <td>{{(vehicle.new_tco || vehicle.used_tco) | currency}}</td>
+
+          <td class="last">
+            <a data-toggle="modal" href="#vehicle-details-modal" ng-click="setLastVehicle(vehicle)"><%= t "pages.actions.details" %></a> |
+            <a href ng-click="confirmDeletion(vehicle, '<%= t "pages.actions.confirm" %>')" >
+              <%= t "pages.actions.destroy" %>
+            </a>
+          </td>
+        </tr>
+      </table>
+
+      <div class="clearfix">
+        <div class="pull-right">
+
+          <div class="pull-right">{{pageInfo()}}</div>
+          <div class="clearfix"></div>
+          <ul class="pagination">
+            <li ng-class="{disabled: currentPage == 1}">
+              <a href ng-click="previousPage()">« <%= t "pages.paging.previous" %></a>
+            </li>
+            <li ng-repeat="n in [] | range:totalPages"
+              ng-class="{active: n == currentPage - 1}"
+              ng-click="setPage(n + 1)">
+              <a href ng-bind="n + 1">1</a>
+            </li>
+            <li ng-class="{disabled: currentPage == totalPages}">
+              <a href ng-click="nextPage()"><%= t "pages.paging.next" %> »</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
     </div>
 
   </div>
