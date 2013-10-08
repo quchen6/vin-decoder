@@ -59,8 +59,8 @@ es:
         style: Estilo
     tooltips:
       vehicle:
-        new_tco: El TCO (Costo Verdadero de Posesión) calculador por Edmunds
-        used_tco: El TCO (Costo Verdadero de Posesión) calculador por Edmunds
+        new_tco: El TCO (Costo Verdadero de Posesión) calculador por Edmunds. (Aveces no es disponible)
+        used_tco: El TCO (Costo Verdadero de Posesión) calculador por Edmunds. (Aveces no es disponible)
 
   pages:
     vin_search: "Búsqueda de VIN"

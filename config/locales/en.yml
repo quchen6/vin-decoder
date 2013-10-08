@@ -55,8 +55,8 @@ en:
         style: "Style"
     tooltips:
       vehicle:
-        new_tco: The Edmunds True Cost to Own based on your location for new vehicles
-        used_tco: The Edmunds True Cost to Own based on your location for preowned vehicles
+        new_tco: The Edmunds True Cost to Own based on your location for new vehicles. (Sometimes unavailable)
+        used_tco: The Edmunds True Cost to Own based on your location for preowned vehicles. (Sometimes unavailable)
 
   pages:
     vin_search: "VIN Search"
