@@ -30,7 +30,7 @@ http_interactions:
       X-Environment:
       - ProdA
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-30.mashery.com
+      - prod-j-worker-us-east-1d-35.mashery.com
       Transfer-Encoding:
       - chunked
       Connection:
@@ -156,10 +156,10 @@ http_interactions:
         light"},"READING_LIGHTS":{"id":294,"name":"READING_LIGHTS","value":"front
         and rear reading lights"}}}},"squishVins":[{"squishVin":"1N4AL3APDC","engineNames":["4INAG2.5"],"squishVinTransmissions":[{"transmissionType":"CVT","numberOfSpeeds":0}]},{"squishVin":"1N4AL3APDN","engineNames":["4INAG2.5"],"squishVinTransmissions":[{"transmissionType":"CVT","numberOfSpeeds":0}]}],"publicationState":"NEW_USED","styleIds":[200444018,200418417,101404650,200418416,200418415]}]}'
     http_version: 
-  recorded_at: Mon, 07 Oct 2013 23:44:55 GMT
+  recorded_at: Tue, 08 Oct 2013 00:32:05 GMT
 - request:
     method: get
-    uri: https://api.edmunds.com/v1/api/tco/newtotalcashpricebystyleidandzip/200444018/?api_key=vk8s2ze9y5tej7bwjp8c2v6g&fmt=json
+    uri: https://api.edmunds.com/v1/api/tco/newtotalcashpricebystyleidandzip/200444018/75771?api_key=vk8s2ze9y5tej7bwjp8c2v6g&fmt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -172,13 +172,13 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
       Content-Type:
-      - text/plain; charset=UTF-8
+      - application/json
       Date:
-      - Mon, 07 Oct 2013 23:44:54 GMT
+      - Tue, 08 Oct 2013 00:32:06 GMT
       P3p:
       - policyref="http://www.edmunds.com/w3c/p3p.xml",CP="IDC DSP COR CURa ADMa DEVa
         TAIa OUR BUS IND UNI COM NAV INT"
@@ -187,19 +187,19 @@ http_interactions:
       X-Environment:
       - ProdA
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-33.mashery.com
+      - prod-j-worker-us-east-1d-38.mashery.com
       Content-Length:
-      - '0'
+      - '17'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ''
+      string: ! '{"value":26282.0}'
     http_version: 
-  recorded_at: Mon, 07 Oct 2013 23:44:55 GMT
+  recorded_at: Tue, 08 Oct 2013 00:32:06 GMT
 - request:
     method: get
-    uri: https://api.edmunds.com/v1/api/tco/usedtotalcashpricebystyleidandzip/200444018/?api_key=vk8s2ze9y5tej7bwjp8c2v6g&fmt=json
+    uri: https://api.edmunds.com/v1/api/tco/usedtotalcashpricebystyleidandzip/200444018/75771?api_key=vk8s2ze9y5tej7bwjp8c2v6g&fmt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -212,13 +212,13 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
       Content-Type:
-      - text/plain; charset=UTF-8
+      - application/json
       Date:
-      - Mon, 07 Oct 2013 23:44:54 GMT
+      - Tue, 08 Oct 2013 00:32:06 GMT
       P3p:
       - policyref="http://www.edmunds.com/w3c/p3p.xml",CP="IDC DSP COR CURa ADMa DEVa
         TAIa OUR BUS IND UNI COM NAV INT"
@@ -227,14 +227,14 @@ http_interactions:
       X-Environment:
       - ProdA
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1d-35.mashery.com
+      - prod-j-worker-us-east-1d-32.mashery.com
       Content-Length:
-      - '0'
+      - '17'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ''
+      string: ! '{"value":24656.0}'
     http_version: 
-  recorded_at: Mon, 07 Oct 2013 23:44:56 GMT
+  recorded_at: Tue, 08 Oct 2013 00:32:06 GMT
 recorded_with: VCR 2.6.0

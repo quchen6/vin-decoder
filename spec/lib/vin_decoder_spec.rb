@@ -20,11 +20,14 @@ describe VinDecoder do
 
 	it "sets the new TCO" do
 		vehicle = do_request
-		vehicle.new_tco.should eq 27062
+		# Can't test with an exact number because Edmunds' values always change.
+		# If a cassette gets rerecorded, then the value potentially changes.
+		vehicle.new_tco.should > 0
 	end
 
 	it "sets the used TCO" do
 		vehicle = do_request
-		vehicle.used_tco.should eq 25352
+		# See comment on new tco spec
+		vehicle.used_tco.should > 0
 	end
 end
