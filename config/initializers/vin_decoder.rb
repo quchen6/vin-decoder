@@ -41,6 +41,7 @@ class VinDecoder
 		parsed_res["value"].try :to_i
 	rescue # Sometimes Edmunds cannot calculate the TCO for a vehicle
 		Rails.logger.error "Failed to get #{type} TCO: #{$!.message}"
+		Rails.logger.error "TCO endpoint: #{tco_enpoint(type, @style_ids.first)}"
 
 		0
 	end
