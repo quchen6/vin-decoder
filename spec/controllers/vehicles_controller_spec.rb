@@ -36,6 +36,18 @@ describe VehiclesController do
     {}
   end
 
+  before :all do
+    Vehicle.delete_all
+  end
+
+  before :each do
+    VCR.insert_cassette("vins/nissan_altima")
+  end
+
+  after :each do
+    VCR.eject_cassette
+  end
+
   describe "GET index" do
     it "assigns all vehicles as @vehicles" do
       vehicle = Vehicle.create! valid_attributes
@@ -47,7 +59,7 @@ describe VehiclesController do
   describe "GET show" do
     it "assigns the requested vehicle as @vehicle" do
       vehicle = Vehicle.create! valid_attributes
-      get :show, {:id => vehicle.to_param}, valid_session
+      get :show, {:id => vehicle.to_param, format: :json}, valid_session
       assigns(:vehicle).should eq(vehicle)
     end
   end
@@ -56,45 +68,35 @@ describe VehiclesController do
     describe "with valid params" do
       it "creates a new Vehicle" do
         expect {
-          VCR.use_cassette "vins/nissan_altima" do
-            post :create, {:vehicle => valid_attributes}, valid_session
-          end
+          post :create, {:vehicle => valid_attributes, format: :json}, valid_session
         }.to change(Vehicle, :count).by(1)
       end
 
       it "assigns a newly created vehicle as @vehicle" do
-        VCR.use_cassette "vins/nissan_altima" do
-          post :create, {:vehicle => valid_attributes}, valid_session
-          assigns(:vehicle).should be_a(Vehicle)
-          assigns(:vehicle).should be_persisted
-        end
+        post :create, {:vehicle => valid_attributes, format: :json}, valid_session
+        assigns(:vehicle).should be_a(Vehicle)
+        assigns(:vehicle).should be_persisted
       end
 
       it "redirects to the created vehicle" do
-        VCR.use_cassette "vins/nissan_altima" do
-          post :create, {:vehicle => valid_attributes}, valid_session
-          response.should redirect_to(Vehicle.last)
-        end
+        post :create, {:vehicle => valid_attributes, format: :json}, valid_session
+        response.response_code.should eq 200
       end
     end
 
     describe "with invalid params" do
       it "assigns a newly created but unsaved vehicle as @vehicle" do
-        VCR.use_cassette "vins/nissan_altima" do
-          # Trigger the behavior that occurs when invalid params are submitted
-          Vehicle.any_instance.stub(:save).and_return(false)
-          post :create, {:vehicle => { vin: vin }}, valid_session
-          assigns(:vehicle).should be_a_new(Vehicle)
-        end
+        # Trigger the behavior that occurs when invalid params are submitted
+        Vehicle.any_instance.stub(:save).and_return(false)
+        post :create, {:vehicle => { vin: vin }, format: :json}, valid_session
+        assigns(:vehicle).should be_a_new(Vehicle)
       end
 
-      it "re-renders the 'new' template" do
-        VCR.use_cassette "vins/nissan_altima" do
-          # Trigger the behavior that occurs when invalid params are submitted
-          Vehicle.any_instance.stub(:save).and_return(false)
-          post :create, {:vehicle => { vin: vin }}, valid_session
-          response.should render_template("new")
-        end
+      it "returns a 422" do
+        # Trigger the behavior that occurs when invalid params are submitted
+        Vehicle.any_instance.stub(:save).and_return(false)
+        post :create, {:vehicle => { vin: vin }, format: :json}, valid_session
+        response.response_code.should be 422
       end
     end
   end

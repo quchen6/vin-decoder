@@ -1,11 +1,22 @@
 class Vehicle < ActiveRecord::Base
 
-	# validates 		:year, :model, :make, presence: true
-	# validate 				:validate_vin
+	DEFAULT_ZIP 					= 75771
+
+	before_validation 		:set_default_zip
 	validates 						:vin, presence: true
 	after_validation 			:get_info_from_edmunds, unless: Proc.new{ |x| x.errors.any? }
 
 	attr_accessor 				:zip
+
+	def full_name
+		[year, make, model, trim].join(" ")
+	end
+
+	def full_error_messages
+		self.errors.full_messages
+	end
+
+	protected
 
 	def get_info_from_edmunds
 		vehicle = self
@@ -38,16 +49,6 @@ class Vehicle < ActiveRecord::Base
 		end
 	end
 
-	def full_name
-		[year, make, model, trim].join(" ")
-	end
-
-	def full_error_messages
-		self.errors.full_messages
-	end
-
-	protected
-
 	def validate_vin
 		if self.vin.blank?
 			self.errors.add :vin, :invalid
@@ -55,5 +56,9 @@ class Vehicle < ActiveRecord::Base
 		else
 			true
 		end
+	end
+
+	def set_default_zip
+		self.zip = DEFAULT_ZIP if self.zip.blank?
 	end
 end

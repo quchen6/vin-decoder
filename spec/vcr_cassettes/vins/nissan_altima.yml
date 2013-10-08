@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 06 Oct 2013 18:46:04 GMT
+      - Mon, 07 Oct 2013 19:10:36 GMT
       P3p:
       - policyref="http://www.edmunds.com/w3c/p3p.xml",CP="IDC DSP COR CURa ADMa DEVa
         TAIa OUR BUS IND UNI COM NAV INT"
@@ -30,7 +30,7 @@ http_interactions:
       X-Environment:
       - ProdA
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-33.mashery.com
+      - prod-j-worker-us-east-1b-30.mashery.com
       Transfer-Encoding:
       - chunked
       Connection:
@@ -39,34 +39,34 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"styleHolder":[{"makeId":200000201,"year":2013,"makeName":"Nissan","makeNiceName":"nissan","modelId":"Nissan_Altima","modelName":"Altima","modelNiceName":"altima","modelYearId":100537289,"transmissionType":"AUTOMATIC","engineType":"gas","engineCompressorType":"NA","engineFuelType":"regular
         unleaded","engineCylinder":4,"engineSize":2.5,"trim":{},"categories":{"PRIMARY_BODY_TYPE":["Car"],"Vehicle
-        Style":["Sedan"],"Vehicle Type":["Car"]},"attributeGroups":{"MAIN":{"id":1,"name":"MAIN","attributes":{"USE_IN_LEADS_FORM":{"id":637,"name":"USE_IN_LEADS_FORM","value":"Y"},"USE_IN_NEW":{"id":10,"name":"USE_IN_NEW","value":"Y"},"NAME":{"id":1,"name":"NAME"},"WORKFLOWSTATUS":{"id":9223372036854775806,"name":"WORKFLOWSTATUS","value":"Completed"},"USE_IN_FUTURE":{"id":595,"name":"USE_IN_FUTURE","value":"N"},"USE_IN_PRE_PRODUCTION":{"id":12,"name":"USE_IN_PRE_PRODUCTION","value":"N"},"USE_IN_USED":{"id":11,"name":"USE_IN_USED","value":"Y"}}},"AIR_CONDITIONING":{"id":9,"name":"AIR_CONDITIONING","attributes":{"FRONT_AIR_CONDITIONING_ZONES":{"id":85,"name":"FRONT_AIR_CONDITIONING_ZONES"},"FRONT_AIR_CONDITIONING":{"id":84,"name":"FRONT_AIR_CONDITIONING"},"REAR_HEAT":{"id":88,"name":"REAR_HEAT","value":"rear
-        ventilation ducts"}}},"LEGACY":{"id":64,"name":"LEGACY","attributes":{"CHROME_ID":{"id":691,"name":"CHROME_ID"}}},"CRASH_TEST_RATINGS":{"id":16,"name":"CRASH_TEST_RATINGS","attributes":{"BUMPER_BASH":{"id":134,"name":"BUMPER_BASH","value":"Not
-        Tested"},"IIHS_ROOF_STRENGTH_TEST_RESULTS":{"id":140,"name":"IIHS_ROOF_STRENGTH_TEST_RESULTS"},"IIHS_REAR_CRASH_PROTECTION/HEAD_RESTRAINT_RATINGS":{"id":136,"name":"IIHS_REAR_CRASH_PROTECTION/HEAD_RESTRAINT_RATINGS"},"IIHS_SMALL_OVERLAP_FRONT_TEST_RESULTS":{"id":690,"name":"IIHS_SMALL_OVERLAP_FRONT_TEST_RESULTS","value":"Acceptable"},"IIHS_MODERATE_OVERLAP_FRONT_TEST_RESULTS":{"id":137,"name":"IIHS_MODERATE_OVERLAP_FRONT_TEST_RESULTS","value":"Good"},"IIHS_SIDE_IMPACT_TEST_RESULTS":{"id":141,"name":"IIHS_SIDE_IMPACT_TEST_RESULTS","value":"Good"}}},"BRAKE_SYSTEM":{"id":11,"name":"BRAKE_SYSTEM","attributes":{"REAR_BRAKE_WIDTH":{"id":108,"name":"REAR_BRAKE_WIDTH","value":"0.4"},"FRONT_BRAKE_WIDTH":{"id":105,"name":"FRONT_BRAKE_WIDTH","value":"1.0"},"REAR_BRAKE_TYPE":{"id":109,"name":"REAR_BRAKE_TYPE","value":"disc"},"ELECTRONIC_BRAKEFORCE_DISTRIBUTION":{"id":102,"name":"ELECTRONIC_BRAKEFORCE_DISTRIBUTION","value":"electronic
-        brakeforce distribution"},"FRONT_BRAKE_DIAMETER":{"id":104,"name":"FRONT_BRAKE_DIAMETER","value":"11.7"},"FRONT_BRAKE_TYPE":{"id":106,"name":"FRONT_BRAKE_TYPE","value":"ventilated
+        Style":["Sedan"],"Vehicle Type":["Car"]},"attributeGroups":{"MAIN":{"id":1,"name":"MAIN","attributes":{"USE_IN_LEADS_FORM":{"id":637,"name":"USE_IN_LEADS_FORM","value":"Y"},"NAME":{"id":1,"name":"NAME"},"USE_IN_NEW":{"id":10,"name":"USE_IN_NEW","value":"Y"},"WORKFLOWSTATUS":{"id":9223372036854775806,"name":"WORKFLOWSTATUS","value":"Completed"},"USE_IN_USED":{"id":11,"name":"USE_IN_USED","value":"Y"},"USE_IN_PRE_PRODUCTION":{"id":12,"name":"USE_IN_PRE_PRODUCTION","value":"N"},"USE_IN_FUTURE":{"id":595,"name":"USE_IN_FUTURE","value":"N"}}},"AIR_CONDITIONING":{"id":9,"name":"AIR_CONDITIONING","attributes":{"FRONT_AIR_CONDITIONING_ZONES":{"id":85,"name":"FRONT_AIR_CONDITIONING_ZONES"},"FRONT_AIR_CONDITIONING":{"id":84,"name":"FRONT_AIR_CONDITIONING"},"REAR_HEAT":{"id":88,"name":"REAR_HEAT","value":"rear
+        ventilation ducts"}}},"LEGACY":{"id":64,"name":"LEGACY","attributes":{"CHROME_ID":{"id":691,"name":"CHROME_ID"}}},"BRAKE_SYSTEM":{"id":11,"name":"BRAKE_SYSTEM","attributes":{"REAR_BRAKE_WIDTH":{"id":108,"name":"REAR_BRAKE_WIDTH","value":"0.4"},"FRONT_BRAKE_WIDTH":{"id":105,"name":"FRONT_BRAKE_WIDTH","value":"1.0"},"ELECTRONIC_BRAKEFORCE_DISTRIBUTION":{"id":102,"name":"ELECTRONIC_BRAKEFORCE_DISTRIBUTION","value":"electronic
+        brakeforce distribution"},"REAR_BRAKE_TYPE":{"id":109,"name":"REAR_BRAKE_TYPE","value":"disc"},"FRONT_BRAKE_DIAMETER":{"id":104,"name":"FRONT_BRAKE_DIAMETER","value":"11.7"},"FRONT_BRAKE_TYPE":{"id":106,"name":"FRONT_BRAKE_TYPE","value":"ventilated
         disc"},"ANTILOCK_BRAKING_SYSTEM":{"id":99,"name":"ANTILOCK_BRAKING_SYSTEM","value":"4-wheel
         ABS"},"BRAKING_ASSIST":{"id":101,"name":"BRAKING_ASSIST","value":"braking
-        assist"},"REAR_BRAKE_DIAMETER":{"id":107,"name":"REAR_BRAKE_DIAMETER","value":"11.5"}}},"MOBILE_CONNECTIVITY":{"id":31,"name":"MOBILE_CONNECTIVITY","attributes":{"PHONE":{"id":302,"name":"PHONE","value":"pre-wired
+        assist"},"REAR_BRAKE_DIAMETER":{"id":107,"name":"REAR_BRAKE_DIAMETER","value":"11.5"}}},"CRASH_TEST_RATINGS":{"id":16,"name":"CRASH_TEST_RATINGS","attributes":{"BUMPER_BASH":{"id":134,"name":"BUMPER_BASH","value":"Not
+        Tested"},"IIHS_ROOF_STRENGTH_TEST_RESULTS":{"id":140,"name":"IIHS_ROOF_STRENGTH_TEST_RESULTS"},"IIHS_REAR_CRASH_PROTECTION/HEAD_RESTRAINT_RATINGS":{"id":136,"name":"IIHS_REAR_CRASH_PROTECTION/HEAD_RESTRAINT_RATINGS"},"IIHS_SMALL_OVERLAP_FRONT_TEST_RESULTS":{"id":690,"name":"IIHS_SMALL_OVERLAP_FRONT_TEST_RESULTS","value":"Acceptable"},"IIHS_MODERATE_OVERLAP_FRONT_TEST_RESULTS":{"id":137,"name":"IIHS_MODERATE_OVERLAP_FRONT_TEST_RESULTS","value":"Good"},"IIHS_SIDE_IMPACT_TEST_RESULTS":{"id":141,"name":"IIHS_SIDE_IMPACT_TEST_RESULTS","value":"Good"}}},"MOBILE_CONNECTIVITY":{"id":31,"name":"MOBILE_CONNECTIVITY","attributes":{"PHONE":{"id":302,"name":"PHONE","value":"pre-wired
         for phone"},"BLUETOOTH":{"id":639,"name":"BLUETOOTH","value":"Bluetooth"}}},"MIRRORS":{"id":28,"name":"MIRRORS","attributes":{"1ST_ROW_VANITY_MIRRORS":{"id":268,"name":"1ST_ROW_VANITY_MIRRORS"},"PASSENGER_SIDE_MIRROR_ADJUSTMENT":{"id":263,"name":"PASSENGER_SIDE_MIRROR_ADJUSTMENT","value":"power"},"DRIVER_SIDE_MIRROR_ADJUSTMENT":{"id":256,"name":"DRIVER_SIDE_MIRROR_ADJUSTMENT","value":"power"}}},"STEERING_WHEEL":{"id":41,"name":"STEERING_WHEEL","attributes":{"STEERING_WHEEL_ADJUSTMENTS":{"id":353,"name":"STEERING_WHEEL_ADJUSTMENTS","value":"tilt
-        and telescopic"},"PHONE_CONTROLS_ON_STEERING_WHEEL":{"id":355,"name":"PHONE_CONTROLS_ON_STEERING_WHEEL","value":"phone
-        controls on steering wheel"},"AUDIO_CONTROLS_ON_STEERING_WHEEL":{"id":349,"name":"AUDIO_CONTROLS_ON_STEERING_WHEEL","value":"audio
-        controls"}}},"CHILD_SAFETY":{"id":13,"name":"CHILD_SAFETY","attributes":{"CHILD_SAFETY_LOCKS":{"id":123,"name":"CHILD_SAFETY_LOCKS","value":"child
+        and telescopic"},"AUDIO_CONTROLS_ON_STEERING_WHEEL":{"id":349,"name":"AUDIO_CONTROLS_ON_STEERING_WHEEL","value":"audio
+        controls"},"PHONE_CONTROLS_ON_STEERING_WHEEL":{"id":355,"name":"PHONE_CONTROLS_ON_STEERING_WHEEL","value":"phone
+        controls on steering wheel"}}},"CHILD_SAFETY":{"id":13,"name":"CHILD_SAFETY","attributes":{"CHILD_SAFETY_LOCKS":{"id":123,"name":"CHILD_SAFETY_LOCKS","value":"child
         safety locks"},"CHILD_SEAT_ANCHORS":{"id":125,"name":"CHILD_SEAT_ANCHORS","value":"child
         seat anchors"}}},"INSTRUMENTATION":{"id":25,"name":"INSTRUMENTATION","attributes":{"ELECTROLUMINESCENT_INSTRUMENTATION":{"id":222,"name":"ELECTROLUMINESCENT_INSTRUMENTATION","value":"electroluminescent
         instrumentation"},"EXTERNAL_TEMPERATURE_GAUGE":{"id":224,"name":"EXTERNAL_TEMPERATURE_GAUGE","value":"external
         temperature display"},"TIRE_PRESSURE_MONITORING_SYSTEM":{"id":227,"name":"TIRE_PRESSURE_MONITORING_SYSTEM","value":"tire
         pressure monitoring"},"LOW_FUEL_LEVEL_INDICATOR":{"id":455,"name":"LOW_FUEL_LEVEL_INDICATOR","value":"low
-        fuel level"},"TACHOMETER":{"id":456,"name":"TACHOMETER","value":"tachometer"},"TRIP_COMPUTER":{"id":229,"name":"TRIP_COMPUTER","value":"trip
-        computer"},"CLOCK":{"id":220,"name":"CLOCK","value":"clock"}}},"2ND_ROW_SEATS":{"id":5,"name":"2ND_ROW_SEATS","attributes":{"FOLDING_2ND_ROW":{"id":53,"name":"FOLDING_2ND_ROW","value":"split
+        fuel level"},"TRIP_COMPUTER":{"id":229,"name":"TRIP_COMPUTER","value":"trip
+        computer"},"TACHOMETER":{"id":456,"name":"TACHOMETER","value":"tachometer"},"CLOCK":{"id":220,"name":"CLOCK","value":"clock"}}},"2ND_ROW_SEATS":{"id":5,"name":"2ND_ROW_SEATS","attributes":{"FOLDING_2ND_ROW":{"id":53,"name":"FOLDING_2ND_ROW","value":"split
         folding"},"2ND_ROW_SEAT_TYPE":{"id":45,"name":"2ND_ROW_SEAT_TYPE","value":"bench"},"ADJUSTABLE_2ND_ROW_HEADRESTS":{"id":48,"name":"ADJUSTABLE_2ND_ROW_HEADRESTS"},"NUMBER_OF_2ND_ROW_HEADRESTS":{"id":58,"name":"NUMBER_OF_2ND_ROW_HEADRESTS","value":"3"},"2ND_ROW_CENTER_ARMREST":{"id":49,"name":"2ND_ROW_CENTER_ARMREST","value":"folding
         with storage"}}},"POWER_OUTLETS":{"id":34,"name":"POWER_OUTLETS","attributes":{"1ST_ROW_POWER_OUTLET":{"id":313,"name":"1ST_ROW_POWER_OUTLET","value":"12V"}}},"SEATBELTS":{"id":35,"name":"SEATBELTS","attributes":{"SEATBELT_PRETENSIONERS":{"id":458,"name":"SEATBELT_PRETENSIONERS","value":"front"},"SEATBELT_FORCE_LIMITERS":{"id":457,"name":"SEATBELT_FORCE_LIMITERS","value":"front"},"2ND_ROW_CENTER_SEATBELT":{"id":319,"name":"2ND_ROW_CENTER_SEATBELT","value":"3-point
-        belt"}}},"SUSPENSION":{"id":44,"name":"SUSPENSION","attributes":{"FRONT_SUSPENSION_CLASSIFICATION":{"id":385,"name":"FRONT_SUSPENSION_CLASSIFICATION","value":"independent"},"REAR_SPRING_TYPE":{"id":390,"name":"REAR_SPRING_TYPE","value":"coil
-        springs"},"INDEPENDENT_SUSPENSION":{"id":387,"name":"INDEPENDENT_SUSPENSION","value":"four-wheel"},"REAR_SUSPENSION_TYPE":{"id":393,"name":"REAR_SUSPENSION_TYPE","value":"multi-link"},"REAR_ARM_TYPE":{"id":389,"name":"REAR_ARM_TYPE","value":"trailing
-        links, lateral links"},"REAR_SUSPENSION_CLASSIFICATION":{"id":392,"name":"REAR_SUSPENSION_CLASSIFICATION","value":"independent"},"FRONT_ARM_TYPE":{"id":382,"name":"FRONT_ARM_TYPE","value":"lower
-        control arms"},"FRONT_STABILIZER_BAR":{"id":384,"name":"FRONT_STABILIZER_BAR","value":"stabilizer
+        belt"}}},"SUSPENSION":{"id":44,"name":"SUSPENSION","attributes":{"FRONT_SUSPENSION_CLASSIFICATION":{"id":385,"name":"FRONT_SUSPENSION_CLASSIFICATION","value":"independent"},"INDEPENDENT_SUSPENSION":{"id":387,"name":"INDEPENDENT_SUSPENSION","value":"four-wheel"},"REAR_SPRING_TYPE":{"id":390,"name":"REAR_SPRING_TYPE","value":"coil
+        springs"},"REAR_ARM_TYPE":{"id":389,"name":"REAR_ARM_TYPE","value":"trailing
+        links, lateral links"},"REAR_SUSPENSION_TYPE":{"id":393,"name":"REAR_SUSPENSION_TYPE","value":"multi-link"},"FRONT_ARM_TYPE":{"id":382,"name":"FRONT_ARM_TYPE","value":"lower
+        control arms"},"REAR_SUSPENSION_CLASSIFICATION":{"id":392,"name":"REAR_SUSPENSION_CLASSIFICATION","value":"independent"},"FRONT_STABILIZER_BAR":{"id":384,"name":"FRONT_STABILIZER_BAR","value":"stabilizer
         bar"},"FRONT_SPRING_TYPE":{"id":383,"name":"FRONT_SPRING_TYPE","value":"coil
         springs"},"REAR_STABILIZER_BAR":{"id":391,"name":"REAR_STABILIZER_BAR","value":"stabilizer
         bar"},"FRONT_SUSPENSION_TYPE":{"id":386,"name":"FRONT_SUSPENSION_TYPE","value":"MacPherson
-        strut"}}},"PRICING":{"id":3,"name":"PRICING","attributes":{"MSRP":{"id":38,"name":"MSRP"},"DEALER_INVOICE":{"id":41,"name":"DEALER_INVOICE"},"USED_TMV_RETAIL":{"id":36,"name":"USED_TMV_RETAIL"},"NEW_TMV_OFFER_PRICE_DISCOUNT":{"id":638,"name":"NEW_TMV_OFFER_PRICE_DISCOUNT","value":".02"},"DELIVERY_CHARGE":{"id":40,"name":"DELIVERY_CHARGE","value":"790"},"USED_TMV_PRIVATE_PARTY":{"id":37,"name":"USED_TMV_PRIVATE_PARTY"},"USED_TMV_TRADE_IN":{"id":35,"name":"USED_TMV_TRADE_IN"},"NEW_TMV":{"id":42,"name":"NEW_TMV"}}},"1ST_ROW_SEATS":{"id":4,"name":"1ST_ROW_SEATS","attributes":{"1ST_ROW_SEAT_TYPE":{"id":43,"name":"1ST_ROW_SEAT_TYPE","value":"bucket"},"1ST_ROW_UPHOLSTERY":{"id":46,"name":"1ST_ROW_UPHOLSTERY"},"NUMBER_OF_1ST_ROW_HEADRESTS":{"id":44,"name":"NUMBER_OF_1ST_ROW_HEADRESTS","value":"2"}}},"CARGO_DIMENSIONS":{"id":12,"name":"CARGO_DIMENSIONS","attributes":{"CARGO_CAPACITY,_ALL_SEATS_IN_PLACE":{"id":120,"name":"CARGO_CAPACITY,_ALL_SEATS_IN_PLACE","value":"15.4"}}},"TRACTION/STABILITY_CONTROL":{"id":45,"name":"TRACTION/STABILITY_CONTROL","attributes":{"STABILITY_CONTROL":{"id":394,"name":"STABILITY_CONTROL","value":"stability
+        strut"}}},"PRICING":{"id":3,"name":"PRICING","attributes":{"MSRP":{"id":38,"name":"MSRP"},"USED_TMV_RETAIL":{"id":36,"name":"USED_TMV_RETAIL"},"DEALER_INVOICE":{"id":41,"name":"DEALER_INVOICE"},"NEW_TMV_OFFER_PRICE_DISCOUNT":{"id":638,"name":"NEW_TMV_OFFER_PRICE_DISCOUNT","value":".02"},"DELIVERY_CHARGE":{"id":40,"name":"DELIVERY_CHARGE","value":"790"},"USED_TMV_PRIVATE_PARTY":{"id":37,"name":"USED_TMV_PRIVATE_PARTY"},"USED_TMV_TRADE_IN":{"id":35,"name":"USED_TMV_TRADE_IN"},"NEW_TMV":{"id":42,"name":"NEW_TMV"}}},"1ST_ROW_SEATS":{"id":4,"name":"1ST_ROW_SEATS","attributes":{"1ST_ROW_SEAT_TYPE":{"id":43,"name":"1ST_ROW_SEAT_TYPE","value":"bucket"},"1ST_ROW_UPHOLSTERY":{"id":46,"name":"1ST_ROW_UPHOLSTERY"},"NUMBER_OF_1ST_ROW_HEADRESTS":{"id":44,"name":"NUMBER_OF_1ST_ROW_HEADRESTS","value":"2"}}},"CARGO_DIMENSIONS":{"id":12,"name":"CARGO_DIMENSIONS","attributes":{"CARGO_CAPACITY,_ALL_SEATS_IN_PLACE":{"id":120,"name":"CARGO_CAPACITY,_ALL_SEATS_IN_PLACE","value":"15.4"}}},"TRACTION/STABILITY_CONTROL":{"id":45,"name":"TRACTION/STABILITY_CONTROL","attributes":{"STABILITY_CONTROL":{"id":394,"name":"STABILITY_CONTROL","value":"stability
         control"},"TRACTION_CONTROL":{"id":395,"name":"TRACTION_CONTROL","value":"traction
         control"}}},"NCI_STANDARD_FACET":{"id":-100,"name":"NCI_STANDARD_FACET","attributes":{"CD_MP3_PLAYBACK":{"id":0,"name":"CD_MP3_PLAYBACK"},"TIRE_PRESSURE_MONITORING":{"id":0,"name":"TIRE_PRESSURE_MONITORING"},"REMOTE_ANTI_THEFT_ALARM_SYSTEM":{"id":0,"name":"REMOTE_ANTI_THEFT_ALARM_SYSTEM"},"SIDE_AIRBAGS:_DUAL_FRONT":{"id":0,"name":"SIDE_AIRBAGS:_DUAL_FRONT"},"KEYLESS_IGNITION":{"id":0,"name":"KEYLESS_IGNITION"},"IN_DASH_CD:_SINGLE_CD_PLAYER":{"id":0,"name":"IN_DASH_CD:_SINGLE_CD_PLAYER"},"CHILD_SEAT_ANCHORS":{"id":0,"name":"CHILD_SEAT_ANCHORS"},"PRE_WIRED_FOR_PHONE":{"id":0,"name":"PRE_WIRED_FOR_PHONE"},"1ST_ROW_SEATS:_BUCKET":{"id":0,"name":"1ST_ROW_SEATS:_BUCKET"},"STABILITY_CONTROL":{"id":0,"name":"STABILITY_CONTROL"},"TRACTION_CONTROL":{"id":0,"name":"TRACTION_CONTROL"}}},"STYLE_INFO":{"id":52,"name":"STYLE_INFO","attributes":{"EPA_CLASS":{"id":444,"name":"EPA_CLASS","value":"Midsize
         Cars"},"STYLE_END_DATE":{"id":436,"name":"STYLE_END_DATE"},"TRIM_LEVEL":{"id":28,"name":"TRIM_LEVEL"},"FLEET":{"id":22,"name":"FLEET","value":"consumer"},"TMV_CATEGORY":{"id":596,"name":"TMV_CATEGORY","value":"Premium
@@ -74,22 +74,23 @@ http_interactions:
         States"},"VEHICLE_STYLE":{"id":636,"name":"VEHICLE_STYLE","value":"Sedan"},"MANUFACTURER_CODE":{"id":438,"name":"MANUFACTURER_CODE"},"STANDARD_VEHICLE_DESCRIPTION":{"id":441,"name":"STANDARD_VEHICLE_DESCRIPTION"},"STYLE_LINK_CODE":{"id":442,"name":"STYLE_LINK_CODE"}}},"STEERING":{"id":40,"name":"STEERING","attributes":{"POWER_STEERING":{"id":348,"name":"POWER_STEERING","value":"electric
         power steering"}}},"DRIVE_TYPE":{"id":19,"name":"DRIVE_TYPE","attributes":{"DRIVEN_WHEELS":{"id":157,"name":"DRIVEN_WHEELS","value":"front
         wheel drive"}}},"STORAGE":{"id":42,"name":"STORAGE","attributes":{"1ST_ROW_CENTER_CONSOLE":{"id":361,"name":"1ST_ROW_CENTER_CONSOLE","value":"front
-        console with storage"},"DOOR_POCKETS_LOCATION":{"id":364,"name":"DOOR_POCKETS_LOCATION","value":"front
-        and rear"},"CUPHOLDERS_LOCATION":{"id":363,"name":"CUPHOLDERS_LOCATION","value":"front
+        console with storage"},"CUPHOLDERS_LOCATION":{"id":363,"name":"CUPHOLDERS_LOCATION","value":"front
+        and rear"},"DOOR_POCKETS_LOCATION":{"id":364,"name":"DOOR_POCKETS_LOCATION","value":"front
         and rear"},"OVERHEAD_CONSOLE":{"id":366,"name":"OVERHEAD_CONSOLE","value":"overhead
-        console with storage"}}},"DOORS":{"id":18,"name":"DOORS","attributes":{"NUMBER_OF_DOORS":{"id":465,"name":"NUMBER_OF_DOORS","value":"4"}}},"EXTERIOR_DIMENSIONS":{"id":22,"name":"EXTERIOR_DIMENSIONS","attributes":{"OVERALL_WIDTH_WITHOUT_MIRRORS":{"id":189,"name":"OVERALL_WIDTH_WITHOUT_MIRRORS","value":"72.0"},"WHEELBASE":{"id":192,"name":"WHEELBASE","value":"109.3"},"OVERALL_LENGTH":{"id":188,"name":"OVERALL_LENGTH","value":"191.5"},"OVERALL_HEIGHT":{"id":187,"name":"OVERALL_HEIGHT","value":"57.9"},"REAR_TRACK":{"id":191,"name":"REAR_TRACK","value":"62.4"},"FRONT_TRACK":{"id":184,"name":"FRONT_TRACK","value":"62.4"}}},"FRONT_PASSENGER_SEAT":{"id":24,"name":"FRONT_PASSENGER_SEAT","attributes":{"NUMBER_OF_PASSENGER_SEAT_MANUAL_ADJUSTMENTS":{"id":212,"name":"NUMBER_OF_PASSENGER_SEAT_MANUAL_ADJUSTMENTS","value":"4"},"PASSENGER_SEAT_WHIPLASH_PROTECTION":{"id":208,"name":"PASSENGER_SEAT_WHIPLASH_PROTECTION","value":"whiplash
+        console with storage"}}},"DOORS":{"id":18,"name":"DOORS","attributes":{"NUMBER_OF_DOORS":{"id":465,"name":"NUMBER_OF_DOORS","value":"4"}}},"EXTERIOR_DIMENSIONS":{"id":22,"name":"EXTERIOR_DIMENSIONS","attributes":{"OVERALL_WIDTH_WITHOUT_MIRRORS":{"id":189,"name":"OVERALL_WIDTH_WITHOUT_MIRRORS","value":"72.0"},"OVERALL_LENGTH":{"id":188,"name":"OVERALL_LENGTH","value":"191.5"},"WHEELBASE":{"id":192,"name":"WHEELBASE","value":"109.3"},"OVERALL_HEIGHT":{"id":187,"name":"OVERALL_HEIGHT","value":"57.9"},"REAR_TRACK":{"id":191,"name":"REAR_TRACK","value":"62.4"},"FRONT_TRACK":{"id":184,"name":"FRONT_TRACK","value":"62.4"}}},"FRONT_PASSENGER_SEAT":{"id":24,"name":"FRONT_PASSENGER_SEAT","attributes":{"NUMBER_OF_PASSENGER_SEAT_MANUAL_ADJUSTMENTS":{"id":212,"name":"NUMBER_OF_PASSENGER_SEAT_MANUAL_ADJUSTMENTS","value":"4"},"PASSENGER_SEAT_WHIPLASH_PROTECTION":{"id":208,"name":"PASSENGER_SEAT_WHIPLASH_PROTECTION","value":"whiplash
         protection system"},"ADJUSTABLE_PASSENGER_SEAT_HEADREST":{"id":204,"name":"ADJUSTABLE_PASSENGER_SEAT_HEADREST","value":"height
         adjustable headrests"}}},"ENGINE_FEATURES":{"id":21,"name":"ENGINE_FEATURES","attributes":{"KEYLESS_IGNITION":{"id":181,"name":"KEYLESS_IGNITION","value":"keyless
         ignition"}}},"AIRBAGS":{"id":10,"name":"AIRBAGS","attributes":{"HEAD_AIRBAGS":{"id":91,"name":"HEAD_AIRBAGS","value":"front
         and rear"},"PASSENGER_AIRBAG_DEACTIVATION":{"id":95,"name":"PASSENGER_AIRBAG_DEACTIVATION","value":"occupant
         sensing deactivation"},"SIDE_AIRBAGS":{"id":97,"name":"SIDE_AIRBAGS","value":"dual
-        front"},"PASSENGER_AIRBAG":{"id":94,"name":"PASSENGER_AIRBAG","value":"Standard"},"DEPOWERED_AIRBAGS":{"id":90,"name":"DEPOWERED_AIRBAGS","value":"Standard"}}},"SEATING_CONFIGURATION":{"id":36,"name":"SEATING_CONFIGURATION","attributes":{"1ST_ROW_SEATING_CAPACITY":{"id":320,"name":"1ST_ROW_SEATING_CAPACITY","value":"2"},"2ND_ROW_SEATING_CAPACITY":{"id":321,"name":"2ND_ROW_SEATING_CAPACITY","value":"3"}}},"SPECIFICATIONS":{"id":39,"name":"SPECIFICATIONS","attributes":{"GROSS_VEHICLE_WEIGHT":{"id":341,"name":"GROSS_VEHICLE_WEIGHT","value":"4211"},"EGE_HIGHWAY_MPG":{"id":0,"name":"EGE_HIGHWAY_MPG","value":"38"},"EPA_COMBINED_MPG":{"id":459,"name":"EPA_COMBINED_MPG","value":"31"},"AERODYNAMIC_DRAG_(CD)":{"id":335,"name":"AERODYNAMIC_DRAG_(CD)","value":"0.30"},"EPA_CITY_MPG":{"id":461,"name":"EPA_CITY_MPG","value":"27"},"TURNING_DIAMETER":{"id":346,"name":"TURNING_DIAMETER"},"TCO_CURB_WEIGHT":{"id":0,"name":"TCO_CURB_WEIGHT","value":"3193"},"EPA_HIGHWAY_MPG":{"id":460,"name":"EPA_HIGHWAY_MPG","value":"38"},"FUEL_CAPACITY":{"id":340,"name":"FUEL_CAPACITY","value":"18.0"},"EGE_CITY_MPG":{"id":0,"name":"EGE_CITY_MPG","value":"27"}}},"DRIVER_SEAT":{"id":20,"name":"DRIVER_SEAT","attributes":{"HEIGHT_ADJUSTABLE_DRIVER_SEAT":{"id":170,"name":"HEIGHT_ADJUSTABLE_DRIVER_SEAT","value":"height
+        front"},"PASSENGER_AIRBAG":{"id":94,"name":"PASSENGER_AIRBAG","value":"Standard"},"DEPOWERED_AIRBAGS":{"id":90,"name":"DEPOWERED_AIRBAGS","value":"Standard"}}},"SEATING_CONFIGURATION":{"id":36,"name":"SEATING_CONFIGURATION","attributes":{"1ST_ROW_SEATING_CAPACITY":{"id":320,"name":"1ST_ROW_SEATING_CAPACITY","value":"2"},"2ND_ROW_SEATING_CAPACITY":{"id":321,"name":"2ND_ROW_SEATING_CAPACITY","value":"3"}}},"SPECIFICATIONS":{"id":39,"name":"SPECIFICATIONS","attributes":{"GROSS_VEHICLE_WEIGHT":{"id":341,"name":"GROSS_VEHICLE_WEIGHT","value":"4211"},"AERODYNAMIC_DRAG_(CD)":{"id":335,"name":"AERODYNAMIC_DRAG_(CD)","value":"0.30"},"EPA_COMBINED_MPG":{"id":459,"name":"EPA_COMBINED_MPG","value":"31"},"EGE_HIGHWAY_MPG":{"id":0,"name":"EGE_HIGHWAY_MPG","value":"38"},"EPA_CITY_MPG":{"id":461,"name":"EPA_CITY_MPG","value":"27"},"TURNING_DIAMETER":{"id":346,"name":"TURNING_DIAMETER"},"FUEL_CAPACITY":{"id":340,"name":"FUEL_CAPACITY","value":"18.0"},"EPA_HIGHWAY_MPG":{"id":460,"name":"EPA_HIGHWAY_MPG","value":"38"},"TCO_CURB_WEIGHT":{"id":0,"name":"TCO_CURB_WEIGHT","value":"3193"},"EGE_CITY_MPG":{"id":0,"name":"EGE_CITY_MPG","value":"27"}}},"DRIVER_SEAT":{"id":20,"name":"DRIVER_SEAT","attributes":{"HEIGHT_ADJUSTABLE_DRIVER_SEAT":{"id":170,"name":"HEIGHT_ADJUSTABLE_DRIVER_SEAT","value":"height
         adjustable"},"DRIVER_SEAT_WHIPLASH_PROTECTION":{"id":168,"name":"DRIVER_SEAT_WHIPLASH_PROTECTION","value":"whiplash
         protection system"},"ADJUSTABLE_DRIVER_SEAT_HEADREST":{"id":162,"name":"ADJUSTABLE_DRIVER_SEAT_HEADREST","value":"height
         adjustable headrests"}}},"WINDOWS":{"id":51,"name":"WINDOWS","attributes":{"REMOTE_WINDOW_OPERATION":{"id":433,"name":"REMOTE_WINDOW_OPERATION","value":"remote
         window operation"},"ONE_TOUCH_WINDOWS":{"id":425,"name":"ONE_TOUCH_WINDOWS"},"POWER_WINDOWS":{"id":427,"name":"POWER_WINDOWS","value":"power
-        windows"},"REAR_DEFOGGER":{"id":429,"name":"REAR_DEFOGGER","value":"rear defogger"},"INTERMITTENT_FRONT_WIPERS":{"id":419,"name":"INTERMITTENT_FRONT_WIPERS","value":"variable
-        intermittent"}}},"TRUNK":{"id":49,"name":"TRUNK","attributes":{"EMERGENCY_TRUNK_RELEASE":{"id":466,"name":"EMERGENCY_TRUNK_RELEASE","value":"interior
+        windows"},"INTERMITTENT_FRONT_WIPERS":{"id":419,"name":"INTERMITTENT_FRONT_WIPERS","value":"variable
+        intermittent"},"REAR_DEFOGGER":{"id":429,"name":"REAR_DEFOGGER","value":"rear
+        defogger"}}},"TRUNK":{"id":49,"name":"TRUNK","attributes":{"EMERGENCY_TRUNK_RELEASE":{"id":466,"name":"EMERGENCY_TRUNK_RELEASE","value":"interior
         trunk release"},"REMOTE_TRUNK_RELEASE":{"id":410,"name":"REMOTE_TRUNK_RELEASE","value":"remote
         trunk release"}}},"TMVU_FEATURE":{"id":200,"name":"TMVU_FEATURE","attributes":{"TMVU_FEATURE_DESCRIPTION_3510000003":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3510000003","value":"Intermittent
         Windshield Wipers"},"TMVU_FEATURE_DESCRIPTION_2610000016":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_2610000016","value":"Front
@@ -129,8 +130,8 @@ http_interactions:
         Lights"},"TMVU_FEATURE_DESCRIPTION_2410000001":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_2410000001","value":"Engine
         Immobilizer"},"TMVU_FEATURE_DESCRIPTION_2410000000":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_2410000000","value":"Anti-Theft
         Alarm System"},"TMVU_FEATURE_DESCRIPTION_1610000011":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1610000011","value":"Tire
-        Pressure Monitoring System"},"TMVU_FEATURE_DESCRIPTION_3210000043":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3210000043","value":"Electric
-        Power Steering"},"TMVU_FEATURE_DESCRIPTION_3210000008":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3210000008","value":"Cupholders"},"TMVU_FEATURE_DESCRIPTION_3510000014":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3510000014","value":"Rear
+        Pressure Monitoring System"},"TMVU_FEATURE_DESCRIPTION_3210000008":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3210000008","value":"Cupholders"},"TMVU_FEATURE_DESCRIPTION_3210000043":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3210000043","value":"Electric
+        Power Steering"},"TMVU_FEATURE_DESCRIPTION_3510000014":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3510000014","value":"Rear
         Defogger"},"TMVU_FEATURE_DESCRIPTION_3210000009":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3210000009","value":"Door
         Pockets"},"TMVU_FEATURE_DESCRIPTION_3510000016":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3510000016","value":"Remote
         Window Operation"},"TMVU_FEATURE_DESCRIPTION_3210000003":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_3210000003","value":"Steering
@@ -138,27 +139,27 @@ http_interactions:
         Seat Anchors"},"TMVU_FEATURE_DESCRIPTION_2210000003":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_2210000003","value":"Emergency
         Trunk Release"},"TMVU_FEATURE_DESCRIPTION_2010000000":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_2010000000","value":"4-Wheel
         ABS"},"TMVU_FEATURE_DESCRIPTION_1010000530":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1010000530","value":"Regular
-        Unleaded Fuel Required"},"TMVU_FEATURE_DESCRIPTION_1410000000":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1410000000","value":"Clock"},"TMVU_FEATURE_DESCRIPTION_2210000000":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_2210000000","value":"Child
-        Safety Locks"},"TMVU_FEATURE_DESCRIPTION_101001":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_101001","value":"AM/FM/CD/MP3
-        Audio System"},"TMVU_FEATURE_DESCRIPTION_1810000002":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1810000002","value":"Traction
+        Unleaded Fuel Required"},"TMVU_FEATURE_DESCRIPTION_2210000000":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_2210000000","value":"Child
+        Safety Locks"},"TMVU_FEATURE_DESCRIPTION_1410000000":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1410000000","value":"Clock"},"TMVU_FEATURE_DESCRIPTION_1810000002":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1810000002","value":"Traction
+        Control"},"TMVU_FEATURE_DESCRIPTION_101001":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_101001","value":"AM/FM/CD/MP3
+        Audio System"},"TMVU_FEATURE_DESCRIPTION_1810000001":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1810000001","value":"Stability
         Control"},"TMVU_FEATURE_DESCRIPTION_1410000005":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1410000005","value":"Low
-        Fuel Level Indicator"},"TMVU_FEATURE_DESCRIPTION_1810000001":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1810000001","value":"Stability
-        Control"},"TMVU_FEATURE_DESCRIPTION_1410000003":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1410000003","value":"External
+        Fuel Level Indicator"},"TMVU_FEATURE_DESCRIPTION_1410000003":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1410000003","value":"External
         Temperature Display"},"TMVU_FEATURE_DESCRIPTION_4020000043":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_4020000043","value":"Radio
         Data System"},"TMVU_FEATURE_DESCRIPTION_1410000009":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1410000009","value":"Trip
         Computer"},"TMVU_FEATURE_DESCRIPTION_1410000007":{"id":0,"name":"TMVU_FEATURE_DESCRIPTION_1410000007","value":"Tachometer"}}},"TRANSMISSION_FEATURES":{"id":47,"name":"TRANSMISSION_FEATURES","attributes":{"SHIFT_CONTROL_MECHANISM":{"id":402,"name":"SHIFT_CONTROL_MECHANISM","value":"lever"},"TRANSMISSION_SHIFT_CONTROLS_LOCATION":{"id":404,"name":"TRANSMISSION_SHIFT_CONTROLS_LOCATION","value":"center
-        console"}}},"SPARE_TIRE/WHEEL":{"id":38,"name":"SPARE_TIRE/WHEEL","attributes":{"SPARE_WHEEL_RIM_TYPE":{"id":332,"name":"SPARE_WHEEL_RIM_TYPE","value":"steel"},"SPARE_TIRE_SIZE":{"id":333,"name":"SPARE_TIRE_SIZE","value":"temporary"},"SPARE_TIRE_MOUNT_LOCATION":{"id":331,"name":"SPARE_TIRE_MOUNT_LOCATION","value":"inside"}}},"INTERIOR_DIMENSIONS":{"id":26,"name":"INTERIOR_DIMENSIONS","attributes":{"2ND_ROW_LEG_ROOM":{"id":249,"name":"2ND_ROW_LEG_ROOM","value":"36.1"},"1ST_ROW_HIP_ROOM":{"id":244,"name":"1ST_ROW_HIP_ROOM","value":"54.0"},"2ND_ROW_SHOULDER_ROOM":{"id":250,"name":"2ND_ROW_SHOULDER_ROOM","value":"56.1"},"2ND_ROW_HEAD_ROOM":{"id":247,"name":"2ND_ROW_HEAD_ROOM","value":"37.1"},"1ST_ROW_LEG_ROOM":{"id":245,"name":"1ST_ROW_LEG_ROOM","value":"45.0"},"1ST_ROW_HEAD_ROOM":{"id":243,"name":"1ST_ROW_HEAD_ROOM"},"2ND_ROW_HIP_ROOM":{"id":248,"name":"2ND_ROW_HIP_ROOM","value":"52.1"},"1ST_ROW_SHOULDER_ROOM":{"id":246,"name":"1ST_ROW_SHOULDER_ROOM","value":"56.4"},"EPA_INTERIOR_VOLUME":{"id":242,"name":"EPA_INTERIOR_VOLUME"}}},"SECURITY":{"id":37,"name":"SECURITY","attributes":{"ENGINE_IMMOBILIZER":{"id":327,"name":"ENGINE_IMMOBILIZER","value":"engine
+        console"}}},"SPARE_TIRE/WHEEL":{"id":38,"name":"SPARE_TIRE/WHEEL","attributes":{"SPARE_WHEEL_RIM_TYPE":{"id":332,"name":"SPARE_WHEEL_RIM_TYPE","value":"steel"},"SPARE_TIRE_MOUNT_LOCATION":{"id":331,"name":"SPARE_TIRE_MOUNT_LOCATION","value":"inside"},"SPARE_TIRE_SIZE":{"id":333,"name":"SPARE_TIRE_SIZE","value":"temporary"}}},"INTERIOR_DIMENSIONS":{"id":26,"name":"INTERIOR_DIMENSIONS","attributes":{"2ND_ROW_LEG_ROOM":{"id":249,"name":"2ND_ROW_LEG_ROOM","value":"36.1"},"1ST_ROW_HIP_ROOM":{"id":244,"name":"1ST_ROW_HIP_ROOM","value":"54.0"},"1ST_ROW_HEAD_ROOM":{"id":243,"name":"1ST_ROW_HEAD_ROOM"},"1ST_ROW_LEG_ROOM":{"id":245,"name":"1ST_ROW_LEG_ROOM","value":"45.0"},"2ND_ROW_HEAD_ROOM":{"id":247,"name":"2ND_ROW_HEAD_ROOM","value":"37.1"},"2ND_ROW_SHOULDER_ROOM":{"id":250,"name":"2ND_ROW_SHOULDER_ROOM","value":"56.1"},"2ND_ROW_HIP_ROOM":{"id":248,"name":"2ND_ROW_HIP_ROOM","value":"52.1"},"EPA_INTERIOR_VOLUME":{"id":242,"name":"EPA_INTERIOR_VOLUME"},"1ST_ROW_SHOULDER_ROOM":{"id":246,"name":"1ST_ROW_SHOULDER_ROOM","value":"56.4"}}},"SECURITY":{"id":37,"name":"SECURITY","attributes":{"ENGINE_IMMOBILIZER":{"id":327,"name":"ENGINE_IMMOBILIZER","value":"engine
         immobilizer"},"POWER_DOOR_LOCKS":{"id":328,"name":"POWER_DOOR_LOCKS","value":"remote
-        power door locks"},"ANTI_THEFT_ALARM_SYSTEM":{"id":326,"name":"ANTI_THEFT_ALARM_SYSTEM","value":"remote
-        anti-theft alarm system"},"2_STAGE_UNLOCKING":{"id":325,"name":"2_STAGE_UNLOCKING","value":"remote
-        2-stage unlocking"}}},"MISC._INTERIOR_FEATURES":{"id":30,"name":"MISC._INTERIOR_FEATURES","attributes":{"CARGO_AREA_LIGHT":{"id":288,"name":"CARGO_AREA_LIGHT","value":"trunk
+        power door locks"},"2_STAGE_UNLOCKING":{"id":325,"name":"2_STAGE_UNLOCKING","value":"remote
+        2-stage unlocking"},"ANTI_THEFT_ALARM_SYSTEM":{"id":326,"name":"ANTI_THEFT_ALARM_SYSTEM","value":"remote
+        anti-theft alarm system"}}},"MISC._INTERIOR_FEATURES":{"id":30,"name":"MISC._INTERIOR_FEATURES","attributes":{"CARGO_AREA_LIGHT":{"id":288,"name":"CARGO_AREA_LIGHT","value":"trunk
         light"},"READING_LIGHTS":{"id":294,"name":"READING_LIGHTS","value":"front
-        and rear reading lights"}}}},"squishVins":[{"squishVin":"1N4AL3APDN","engineNames":["4INAG2.5"],"squishVinTransmissions":[{"transmissionType":"CVT","numberOfSpeeds":0}]},{"squishVin":"1N4AL3APDC","engineNames":["4INAG2.5"],"squishVinTransmissions":[{"transmissionType":"CVT","numberOfSpeeds":0}]}],"publicationState":"NEW_USED","styleIds":[200418417,200444018,200418416,200418415,101404650]}]}'
+        and rear reading lights"}}}},"squishVins":[{"squishVin":"1N4AL3APDC","engineNames":["4INAG2.5"],"squishVinTransmissions":[{"transmissionType":"CVT","numberOfSpeeds":0}]},{"squishVin":"1N4AL3APDN","engineNames":["4INAG2.5"],"squishVinTransmissions":[{"transmissionType":"CVT","numberOfSpeeds":0}]}],"publicationState":"NEW_USED","styleIds":[200444018,200418417,101404650,200418416,200418415]}]}'
     http_version: 
-  recorded_at: Sun, 06 Oct 2013 22:01:08 GMT
+  recorded_at: Mon, 07 Oct 2013 23:44:55 GMT
 - request:
     method: get
-    uri: https://api.edmunds.com/v1/api/tco/newtotalcashpricebystyleidandzip/200418417/75771?api_key=vk8s2ze9y5tej7bwjp8c2v6g&fmt=json
+    uri: https://api.edmunds.com/v1/api/tco/newtotalcashpricebystyleidandzip/200444018/?api_key=vk8s2ze9y5tej7bwjp8c2v6g&fmt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -171,13 +172,13 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Content-Type:
-      - application/json
+      - text/plain; charset=UTF-8
       Date:
-      - Sun, 06 Oct 2013 20:53:27 GMT
+      - Mon, 07 Oct 2013 23:44:54 GMT
       P3p:
       - policyref="http://www.edmunds.com/w3c/p3p.xml",CP="IDC DSP COR CURa ADMa DEVa
         TAIa OUR BUS IND UNI COM NAV INT"
@@ -186,19 +187,19 @@ http_interactions:
       X-Environment:
       - ProdA
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-30.mashery.com
-      Transfer-Encoding:
-      - chunked
+      - prod-j-worker-us-east-1b-33.mashery.com
+      Content-Length:
+      - '0'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"value":27062.0}'
+      string: ''
     http_version: 
-  recorded_at: Sun, 06 Oct 2013 22:01:08 GMT
+  recorded_at: Mon, 07 Oct 2013 23:44:55 GMT
 - request:
     method: get
-    uri: https://api.edmunds.com/v1/api/tco/usedtotalcashpricebystyleidandzip/200418417/75771?api_key=vk8s2ze9y5tej7bwjp8c2v6g&fmt=json
+    uri: https://api.edmunds.com/v1/api/tco/usedtotalcashpricebystyleidandzip/200444018/?api_key=vk8s2ze9y5tej7bwjp8c2v6g&fmt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -211,13 +212,13 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Content-Type:
-      - application/json
+      - text/plain; charset=UTF-8
       Date:
-      - Sun, 06 Oct 2013 20:52:04 GMT
+      - Mon, 07 Oct 2013 23:44:54 GMT
       P3p:
       - policyref="http://www.edmunds.com/w3c/p3p.xml",CP="IDC DSP COR CURa ADMa DEVa
         TAIa OUR BUS IND UNI COM NAV INT"
@@ -226,14 +227,14 @@ http_interactions:
       X-Environment:
       - ProdA
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-36.mashery.com
-      Transfer-Encoding:
-      - chunked
+      - prod-j-worker-us-east-1d-35.mashery.com
+      Content-Length:
+      - '0'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"value":25352.0}'
+      string: ''
     http_version: 
-  recorded_at: Sun, 06 Oct 2013 22:01:08 GMT
+  recorded_at: Mon, 07 Oct 2013 23:44:56 GMT
 recorded_with: VCR 2.6.0

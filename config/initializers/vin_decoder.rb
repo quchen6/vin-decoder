@@ -34,11 +34,14 @@ class VinDecoder
 
 	# Get the TCO (True Cost of Ownership) for vehicle
 	def tco type
-		res 				= RestClient.get tco_enpoint(type, @style_ids.first)
+		endpoint 		= tco_enpoint(type, @style_ids.first)
+		res 				= RestClient.get endpoint
 		parsed_res 	= JSON.parse(res.body)
 
 		parsed_res["value"].try :to_i
 	rescue # Sometimes Edmunds cannot calculate the TCO for a vehicle
+		Rails.logger.error "Failed to get #{type} TCO: #{$!.message}"
+
 		0
 	end
 
